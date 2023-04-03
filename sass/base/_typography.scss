@@ -19,3 +19,20 @@
   }
 }
 
+.slider {
+  color: white;
+
+  &__caption {
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+
+.stats__item-digits {
+  display: inline;
+  color: #f47920;
+  font-size: 56px;
+  margin: 0 auto;
+}
+

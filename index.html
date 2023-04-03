@@ -8,51 +8,282 @@
       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/style.css" />
    </head>
-   <body>
-      <div class="container">
-         <header class="header d-flex justify-content-between align-items-center p-4" style="background-color: black">
-            <div class="header__logo me-4">
-               <img src="img/tribe_vibe.png" alt="logo" />
-            </div>
-            <nav class="header__navigation d-none d-lg-block">
-               <ul class="header__list nav">
-                  <li class="nav-item header__item">
-                     <a href="#" class="nav-link text-uppercase" aria-current="page" >home</a>
-                  </li>
-                  <li class="nav-item dropdown header__item">
-                     <a href="#" class="nav-link text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">the force</a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item text-uppercase" href="#">strengths</a></li>
-                        <li><a class="dropdown-item text-uppercase" href="#">expertise</a></li>
-                     </ul>
-                  </li>
-                  <li class="nav-item header__item">
-                     <a href="#" class="nav-link text-uppercase">tribe campus program</a>
-                  </li>
-                  <li class="nav-item header__item">
-                     <a href="#" class="nav-link text-uppercase">artists</a>
-                  </li>
-                  <li class="nav-item header__item">
-                     <a href="#" class="nav-link text-uppercase">events</a>
-                  </li>
-                  <li class="nav-item header__item dropdown">
-                     <a href="#" class="nav-link text-uppercase dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">corporate info</a>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-item text-uppercase">notice of agm</li>
-                        <li class="dropdown-item text-uppercase">notice of egm</li>
-                        <li class="dropdown-item text-uppercase">annual returns</li>
-                        <li class="dropdown-item text-uppercase">directors details</li>
-                     </ul>
-                  </li>
-                  <li class="nav-item header__item">
-                     <a href="#" class="nav-link text-uppercase">contact us</a>
-                  </li>
-               </ul>
-            </nav>
-            <a href="#" class="header__login text-uppercase ms-auto ms-lg-0 me-4">tcp login</a> 
-            <div class="burger-menu d-lg-none"></div>
+   <body >
+         <header class="header  p-4 pb-5">
+           <div class="container d-flex justify-content-between align-items-center">
+              <div class="header__logo me-4">
+                 <img src="img/tribe_vibe.png" alt="logo" />
+              </div>
+              <nav class="header__navigation d-none d-lg-block text">
+                 <ul class="header__list nav">
+                    <li class="nav-item header__item">
+                       <a href="#" class="nav-link text-uppercase" aria-current="page">home</a>
+                    </li>
+                    <li class="nav-item dropdown header__item">
+                       <a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">the force</a>
+                       <ul class="dropdown-menu">
+                          <li class="dropdown-item text-uppercase">strengths</li>
+                          <li class="dropdown-item text-uppercase">expertise</li>
+                       </ul>
+                    </li>
+                    <li class="nav-item header__item">
+                       <a href="#" class="nav-link text-uppercase">tribe campus program</a>
+                    </li>
+                    <li class="nav-item header__item">
+                       <a href="#" class="nav-link text-uppercase">artists</a>
+                    </li>
+                    <li class="nav-item header__item">
+                       <a href="#" class="nav-link text-uppercase">events</a>
+                    </li>
+                    <li class="nav-item header__item dropdown">
+                       <a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">corporate info</a>
+                       <ul class="dropdown-menu">
+                          <li class="dropdown-item text-uppercase">notice of agm</li>
+                          <li class="dropdown-item text-uppercase">notice of egm</li>
+                          <li class="dropdown-item text-uppercase">annual returns</li>
+                          <li class="dropdown-item text-uppercase">directors details</li>
+                       </ul>
+                    </li>
+                    <li class="nav-item header__item">
+                       <a href="#" class="nav-link text-uppercase">contact us</a>
+                    </li>
+                 </ul>
+              </nav>
+              <a href="#" class="header__login text-uppercase ms-auto ms-lg-0 me-4">tcp login</a>
+  
+              <nav class="navbar d-lg-none bg-dark">
+                 <div class="container-fluid">
+                    <button
+                       class="navbar-toggler"
+                       type="button"
+                       data-bs-toggle="collapse"
+                       data-bs-target="#navbarSupportedContent"
+                       aria-controls="navbarSupportedContent"
+                       aria-expanded="false"
+                       aria-label="Toggle navigation"
+                    >
+                       <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse" id="navbarSupportedContent">
+                      <ul class="header__list nav">
+                        <li class="nav-item header__item">
+                           <a href="#" class="nav-link text-uppercase" aria-current="page">home</a>
+                        </li>
+                        <li class="nav-item dropdown header__item">
+                           <a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">the force</a>
+                           <ul class="dropdown-menu">
+                              <li class="dropdown-item text-uppercase">strengths</li>
+                              <li class="dropdown-item text-uppercase">expertise</li>
+                           </ul>
+                        </li>
+                        <li class="nav-item header__item">
+                           <a href="#" class="nav-link text-uppercase">tribe campus program</a>
+                        </li>
+                        <li class="nav-item header__item">
+                           <a href="#" class="nav-link text-uppercase">artists</a>
+                        </li>
+                        <li class="nav-item header__item">
+                           <a href="#" class="nav-link text-uppercase">events</a>
+                        </li>
+                        <li class="nav-item header__item dropdown">
+                           <a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">corporate info</a>
+                           <ul class="dropdown-menu">
+                              <li class="dropdown-item text-uppercase">notice of agm</li>
+                              <li class="dropdown-item text-uppercase">notice of egm</li>
+                              <li class="dropdown-item text-uppercase">annual returns</li>
+                              <li class="dropdown-item text-uppercase">directors details</li>
+                           </ul>
+                      </div>
+                 </div>
+              </nav>
+           </div>
          </header>
-      </div>
+         <main>
+          <section class="slider pb-5">
+
+           <div class="container">
+              <div id="carouselItems" class="heading__slider carousel slide carousel-fade w-75 ms-auto" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/slider1.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                      <p class="slider__caption"> the first slide.</p>
+                    </div>
+                  </div>
+  
+                  <div class="carousel-item">
+                    <img src="img/slider2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">  
+                      <p class="slider__caption"> the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slider3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption"> 
+                      <p class="slider__caption"> the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+               
+                <button class="carousel-control-next header__carousel-btn" type="button" data-bs-target="#carouselItems" data-bs-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+  
+              <div class="background-slider">
+                <svg class="floaty-shadow" version="1.0" xmlns="http://www.w3.org/2000/svg" width="289.000000pt" height="288.000000pt" viewBox="0 0 289.000000 288.000000" preserveAspectRatio="xMidYMid meet">
+                  <g class="floaty" transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+                  <path class="hser_1" d="M2095 2092 c685 -683 780 -774 783 -752 4 22 -96 124 -754 777 -594
+                  589 -764 752 -784 752 -20 1 129 -153 755 -777z"></path>
+                  <path class="hser_2" d="M2176 2178 c383 -381 700 -694 704 -696 50 -18 -99 140 -674 716
+                  -561 562 -675 672 -698 672 -24 0 73 -101 668 -692z"></path>
+                  <path class="hser_1" d="M1180 2842 c0 -5 378 -383 839 -840 651 -646 840 -828 845 -815 10
+                  24 -1629 1663 -1662 1663 -12 0 -22 -4 -22 -8z"></path>
+                  <path class="hser_2" d="M1940 2574 c151 -151 423 -420 603 -597 260 -254 327 -315 322 -291
+                  -5 21 -157 179 -576 597 -475 473 -574 567 -596 567 -24 0 7 -35 247 -276z"></path>
+                  <path class="hser_1" d="M1925 1931 c489 -490 893 -891 896 -891 4 0 10 7 13 16 9 24 -1736
+                  1758 -1773 1762 -20 2 185 -208 864 -887z"></path>
+                  <path class="hser_2" d="M2350 2336 c256 -256 466 -466 467 -466 0 0 -4 16 -10 35 -8 26 -114
+                  138 -429 452 -230 229 -423 420 -430 424 -76 40 -13 -30 402 -445z"></path>
+                  <path class="hser_1" d="M920 2771 c0 -5 419 -426 932 -935 780 -775 934 -923 942 -908 8 14
+                  -145 170 -914 934 -534 530 -932 918 -942 918 -10 0 -18 -4 -18 -9z"></path>
+                  <path class="hser_2" d="M807 2724 c-6 -6 1903 -1914 1923 -1922 4 -2 10 4 13 12 7 17 -1883
+                  1909 -1911 1914 -10 2 -21 0 -25 -4z"></path>
+                  <path class="hser_1" d="M704 2668 c-5 -7 357 -374 981 -996 863 -862 989 -983 998 -967 9 17
+                  -117 145 -974 997 -541 537 -987 977 -991 978 -4 0 -10 -5 -14 -12z"></path>
+                  <path class="hser_2" d="M2201 2653 c2 -5 110 -112 239 -239 224 -219 249 -238 155 -114 -61
+                  79 -259 269 -334 319 -35 24 -62 39 -60 34z"></path>
+                  <path class="hser_1" d="M602 2602 c-9 -6 290 -309 996 -1010 802 -796 1012 -999 1021 -988 9
+                  10 -196 219 -989 1010 -550 548 -1003 996 -1007 996 -5 0 -14 -4 -21 -8z"></path>
+                  <path d="M512 2531 c-10 -6 275 -296 998 -1017 556 -555 1016 -1010 1021
+                  -1012 5 -2 12 4 15 13 5 12 -257 278 -1001 1018 -554 551 -1010 1003 -1014
+                  1004 -3 2 -12 -1 -19 -6z"></path>
+                  <path class="hser_2" d="M424 2448 c-5 -8 342 -360 1011 -1025 852 -846 1021 -1010 1033
+                  -1000 13 10 -151 177 -1004 1024 -560 557 -1022 1013 -1026 1013 -4 0 -10 -5
+                  -14 -12z"></path>
+                  <path class="hser_1" d="M344 2365 c-5 -12 244 -266 1001 -1018 554 -551 1014 -1003 1020
+                  -1005 7 -2 16 1 19 6 5 9 -2003 2023 -2024 2030 -6 2 -13 -4 -16 -13z"></path>
+                  <path class="hser_1" d="M274 2275 c-5 -13 184 -208 792 -817 1018 -1019 1208 -1202 1223
+                  -1185 9 11 -199 223 -999 1016 -777 771 -1011 999 -1016 986z"></path>
+                  <path d="M206 2174 c-4 -9 -1 -23 5 -30 6 -8 449 -448 984 -979 746 -741 977
+                  -964 990 -959 13 5 -135 159 -661 686 -980 981 -1310 1302 -1318 1282z"></path>
+                  <path d="M147 2066 c-4 -11 287 -308 949 -968 526 -524 958 -954 962 -955 4
+                  -2 13 1 21 6 11 7 -209 232 -948 968 -530 527 -967 959 -971 961 -4 2 -10 -4
+                  -13 -12z"></path>
+                  <path d="M97 1950 c-8 -30 1835 -1860 1865 -1852 23 6 -68 98 -1173 1193 -559
+                  553 -688 675 -692 659z"></path>
+                  <path d="M56 1823 c-5 -13 44 -68 201 -223 114 -114 512 -509 884 -879 526
+                  -523 680 -670 694 -665 13 5 -172 196 -871 895 -489 489 -892 889 -895 889 -4
+                  0 -10 -8 -13 -17z"></path>
+                  <path d="M26 1693 c-5 -13 190 -214 811 -836 450 -450 826 -823 836 -828 10
+                  -6 24 -6 32 -1 12 6 -183 205 -829 845 -647 642 -845 833 -850 820z"></path>
+                  <path d="M10 1537 c0 -35 1498 -1520 1538 -1525 21 -3 -110 134 -598 623 -344
+                  344 -696 694 -782 777 -135 129 -158 147 -158 125z"></path>
+                  <path d="M0 1389 c0 -34 1354 -1389 1389 -1389 12 0 21 3 19 8 -1 4 -319 322
+                  -705 706 -562 560 -703 695 -703 675z"></path>
+                  <path d="M20 1199 c0 -18 124 -147 498 -522 554 -556 661 -657 694 -657 26 0
+                  -109 138 -784 802 -321 315 -408 395 -408 377z"></path>
+                  <path d="M75 990 c4 -14 13 -34 19 -46 6 -11 200 -207 432 -437 362 -358 464
+                  -451 480 -434 2 1 -209 214 -467 472 -288 287 -468 460 -464 445z"></path>
+                  <path d="M248 640 c58 -88 320 -349 400 -399 29 -19 54 -32 55 -30 1 2 -112
+                  117 -252 254 -239 236 -251 246 -203 175z"></path>
+                  </g>
+                  </svg>
+              </div>
+           </div>
+          </section>
+
+          <section class="about pb-5">
+            <div class="container">
+              <div class="about__img-container">
+                <img class="about__img" src="img/about.jpeg" alt="">
+              </div>
+              <div class="about__text-container mb-4">
+                <div class="about__heading">
+                  <h2 class="about__title text-uppercase">about us</h2>
+                </div>
+                <div class="about__paragraph">
+                  <p class="about__text">TribeVibe Entertainment Pvt. Ltd, a BookMyShow Enterprise established in 2019.TribeVibe primarily created an engagement platform within the college realm to connect brands with Genz. TribeVibe revolutionized the college festival experience with TribeVibe pro nights, Sunburn campus, brand engagements & much more. TribeVibe aims to be the one stop solution for brands to connect with millenials & GenZ to create brand awareness,enhance engagement and extensively acquire social media presence.</p>
+                </div>
+              </div>
+              <a href="#" class="about__link text-uppercase">know more</a>
+            </div>
+          </section>
+
+          <section class="stats">
+            <div class="container">
+              <div class="stats__heading">
+                <h2 class="stats__title-p1 text-uppercase">we broke a record by</h2>
+                <h2 class="stats__title-p2 text-uppercase">traveling faster than light</h2>
+              </div>
+              <div class="stats__digits">
+                <div class="row stats__row mb-5">
+                  <div class="col-6 stats__item">
+                    <h3 class="stats__item-title text-uppercase">shows<br> slayed</h3>
+                    <p class="stats__item-digits">600+</p>
+                  </div>
+                  <div class="col-6 stats__item">
+                    <h3 class="stats__item-title text-uppercase">colleges connected</h3>
+                    <p class="stats__item-digits">300+</p>
+                  </div>
+                </div>
+                <div class="row stats__row mb-5">
+                  <div class="col-6 stats__item">
+                    <h3 class="stats__item-title text-uppercase">festivals fired up</h3>
+                    <p class="stats__item-digits">390+</p>
+                  </div>
+                  <div class="col-6 stats__item">
+                    <h3 class="stats__item-title text-uppercase">artists accessed</h3>
+                    <p class="stats__item-digits">250+</p>
+                  </div>
+                </div>
+                <div class="row stats__row">
+                  <div class="col-6 stats__item">
+                    <h3 class="stats__item-title text-uppercase">cities conquered</h3>
+                    <p class="stats__item-digits">150</p>
+                  </div>
+                  <div class="col-6 stats__item">
+                    <h3 class="stats__item-title text-uppercase">fanatic footfalls</h3>
+                    <p class="stats__item-digits">900,000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stats__img">
+                <div class="stats__img-container">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="186.000000pt" height="134.000000pt" viewBox="0 0 186.000000 134.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+                    <path d="M1815 1328 c-12 -35 -35 -236 -35 -306 0 -83 7 -98 38 -88 15 5 20
+                    27 30 154 7 81 12 171 12 200 0 46 -2 52 -20 52 -11 0 -23 -6 -25 -12z"></path>
+                    <path d="M1419 1077 c-19 -12 -44 -43 -56 -67 -12 -25 -61 -125 -108 -223 -66
+                    -136 -97 -190 -134 -228 -26 -27 -52 -49 -58 -49 -5 0 -18 9 -29 21 -16 18
+                    -19 37 -19 133 1 94 4 119 24 163 12 28 34 61 47 74 23 22 25 22 42 6 14 -14
+                    17 -34 15 -102 -1 -77 0 -85 17 -85 44 0 54 163 13 218 -26 35 -72 40 -117 12
+                    -45 -27 -55 -44 -132 -222 -117 -271 -150 -324 -176 -287 -9 14 -4 255 8 316
+                    5 26 2 32 -16 38 -14 4 -27 2 -35 -6 -8 -8 -47 -100 -89 -206 -76 -194 -104
+                    -258 -111 -251 -3 2 4 85 16 184 11 98 21 210 22 247 2 62 0 71 -22 88 -13 10
+                    -30 19 -38 19 -26 0 -102 -84 -152 -168 l-49 -82 -7 42 c-10 61 -22 78 -53 78
+                    -59 0 -123 -69 -183 -196 -44 -92 -52 -154 -20 -154 13 0 24 16 41 61 28 77
+                    80 166 118 202 43 41 45 22 22 -151 -11 -81 -22 -165 -25 -188 -10 -76 46 -85
+                    65 -10 46 177 141 391 207 463 l34 38 -5 -55 c-4 -30 -13 -113 -22 -185 -8
+                    -72 -16 -169 -17 -216 -2 -96 8 -119 52 -119 47 0 82 52 146 219 35 89 40 90
+                    48 8 6 -58 37 -97 78 -97 45 0 86 45 139 154 36 74 50 94 50 74 0 -42 29 -105
+                    55 -122 76 -50 166 9 245 158 19 36 38 66 43 66 4 0 7 -12 7 -27 0 -40 31 -96
+                    60 -110 14 -7 44 -13 68 -13 69 0 120 55 199 217 35 73 63 141 61 150 -2 12
+                    -12 18 -28 18 -21 0 -33 -15 -80 -102 -98 -180 -138 -226 -178 -204 -24 13
+                    -28 23 -37 93 l-7 54 39 16 c104 40 197 256 131 302 -31 22 -69 20 -109 -7z"></path>
+                    <path d="M1333 459 c-136 -17 -513 -161 -674 -256 -103 -61 -199 -147 -199
+                    -179 0 -38 35 -30 95 24 112 99 277 182 544 273 144 49 221 71 294 84 34 5 38
+                    9 35 33 -3 31 -11 33 -95 21z"></path>
+                    </g>
+                    </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+         </main>
+   
       <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
    </body>
 </html>

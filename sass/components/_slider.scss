@@ -1,0 +1,66 @@
+.slider {
+  position: relative;
+  background-color: black;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+  background-size: 70px 70px, 70px 70px;
+}
+
+.heading__slider {
+  padding: 30px 15px;
+  background-color: white;
+  box-shadow: #f47920 7px 7px;
+  z-index: 1;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-item {
+  position: relative !important;
+}
+
+.carousel-caption {
+  position: absolute !important;
+  top: 100px !important;
+  left: -80% !important;
+  z-index: 100;
+
+}
+
+.slider__caption {
+  display: inline;
+  padding: 15px;
+  background-color: white;
+}
+
+.header__carousel-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: #fff -4px -1px 0;
+  position: absolute;
+  top: 50%;
+
+  & svg {
+    fill: white;
+    padding: 5px;
+  }
+}
+
+.carousel-control-next {
+  opacity: 1;
+}
+
+.background-slider {
+  width: 60%;
+  position: absolute;
+  top: -70px;
+  right: 0;
+  z-index: 0;
+}
+
+.floaty-shadow {
+  width: 100%;
+}
