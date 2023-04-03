@@ -1,0 +1,21 @@
+.header {
+
+  &__item {
+    font-size: 16px;
+
+    & a {
+      color: white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  &__login {
+    color: $color-yellow;
+  }
+}
+

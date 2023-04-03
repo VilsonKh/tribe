@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+.header__item {
+  font-size: 16px; }
+  .header__item a {
+    color: white; }
+    .header__item a:hover, .header__item a:active, .header__item a:focus {
+      color: #d6e033; }
+
+.header__login {
+  color: #d6e033; }
+
+.header__logo {
+  width: 210px; }
+  .header__logo img {
+    width: 100%; }
+
+.burger-menu {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  position: relative; }
+  .burger-menu::after, .burger-menu::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: white; }
+  .burger-menu::after {
+    position: absolute;
+    top: -7px; }
+  .burger-menu::before {
+    position: absolute;
+    top: 7px; }
