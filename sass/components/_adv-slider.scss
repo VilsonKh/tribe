@@ -1,0 +1,29 @@
+.adv-slider__indicators [data-bs-target] {
+  background-color: black;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+  background-size: 70px 70px, 70px 70px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid white;
+  opacity: 1;
+}
+
+.adv-slider__indicators .active {
+  background-color: $color-yellow;
+}
+
+.adv-slider {
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+  background-size: 70px 70px, 70px 70px;
+  overflow-x: hidden!important;
+   &__container {
+      background-color: black;
+   }
+
+   &__indicators {
+    top: 110% !important; 
+   }
+}
+

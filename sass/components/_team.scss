@@ -1,0 +1,53 @@
+.team {
+  background-color: black;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+  background-size: 70px 70px, 70px 70px;
+  
+  &__img {
+    padding: 50px 10px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: #485d74bf -8px 8px;
+    & img {
+      border: 2px solid black;
+    }
+  }
+
+  &__text {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   margin-top: 25px;
+   margin-bottom: 15px;
+
+    &-p1 {
+      display: inline-block;
+      background-color: white;
+      border: 1px solid black;
+      padding: 5px;
+      box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
+      letter-spacing: -1px;
+      position: relative;
+      right: 5%;
+    }
+  
+    &-p2 {
+      display: inline-block;
+      background-color: white;
+      border: 1px solid black;
+      padding: 5px 30px;
+      width: 90%;
+      text-align: center;
+  
+    }
+  }
+
+  &__link {
+    display: block ;
+    color: white !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}

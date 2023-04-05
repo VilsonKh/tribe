@@ -1,5 +1,8 @@
 .about {
   background-color: $color-yellow;
+  background-image: linear-gradient(rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.13) 69px, rgba(0, 0, 0, 0.05) 70px), linear-gradient(90deg, rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
+  background-size: 70px 70px, 70px 70px;
+  overflow-x: hidden!important;
 
   &__img-container {
     width: 95%;
