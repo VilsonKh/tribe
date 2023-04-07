@@ -1,40 +1,28 @@
 .header {
-  background-color: black;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
-  background-size: 70px 70px, 70px 70px;
+   background-color: black;
+   background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+   background-size: 70px 70px, 70px 70px;
+   overflow-x: hidden!important;
+   
+   &__logo {
+      width: 210px;
 
-  &__logo {
-    width: 210px;
-
-    & img {
-      width: 100%;
-    }
-  }
-
-
+      & img {
+         width: 100%;
+      }
+   }
 }
 
-.burger-menu__button {
-  width: 20px;
-  height: 3px;
-  background-color: white;
-  position: relative;
+.burger-icon {
+   width: 30px;
+   fill: white;
+}
+#awwwards {
+   position: fixed;
+   z-index: 999;
+   transform: translateY(-50%);
+   top: 50%;
+   right: 0;
 
-  &::after,
-  &::before {
-    content: "";
-    width: 20px;
-    height: 3px;
-    background-color: white;
-  }
-
-  &::after {
-    position: absolute;
-    top: -7px;
-  }
-
-  &::before {
-    position: absolute;
-    top: 7px;
-  }
 }

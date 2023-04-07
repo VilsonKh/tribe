@@ -3,6 +3,9 @@
   background-color: black;
   background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
   background-size: 70px 70px, 70px 70px;
+  overflow-x: hidden!important;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 .heading__slider {
@@ -10,6 +13,11 @@
   background-color: white;
   box-shadow: #f47920 7px 7px;
   z-index: 1;
+
+  @media screen and (min-width:992px) {
+    width: 75% !important;
+    margin-left: auto;
+  }
 }
 
 .carousel-inner {
@@ -26,12 +34,23 @@
   left: -80% !important;
   z-index: 100;
 
+  @include respond (mobile) {
+    top: -120px !important;
+    left: 0 !important;
+  }
+
 }
 
 .slider__caption {
   display: inline;
   padding: 15px;
   background-color: white;
+
+  @include respond (mobile) {
+   font-size: 20px;
+   display: inline-block;
+   width: 100%;
+  }
 }
 
 .header__carousel-btn {
@@ -63,4 +82,25 @@
 
 .floaty-shadow {
   width: 100%;
+}
+
+.wtf {
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  padding-top: 40px;
+  position: absolute;
+  width: 150px;
+  box-shadow: #485d74bf 8px 8px;
+  z-index: 999;
+
+  &__container {
+    background-color: #f47920;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px 30px;
+  }
+  
+
 }

@@ -1,0 +1,91 @@
+.artists__slider {
+   width: 300px;
+   margin-bottom: 50px;
+   position: absolute;
+
+   @media screen and (max-width:992px) {
+    position: relative;
+    margin: 0 auto;
+   }
+
+   & img {
+      width: 100px;
+      border-radius: 50%;
+      border: 1px solid white;
+   }
+
+   &-item {
+   }
+
+   &-img__container {
+      width: 120px;
+      margin-left: 50px;
+      position: relative;
+      top: 50px;
+   }
+
+   &-text__container {
+     
+      padding: 50px 50px 50px 50px;
+      background-image: url(../img/artists__slider.png);
+      background-size: 100% 94%;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      text-align: center;
+   }
+
+   &-text {
+      text-align: left;
+   }
+}
+
+.ever__slider {
+   width: 70%;
+   margin-left: auto;
+  display: none !important;
+   @media screen and (min-width:992px) {
+    display: block !important;
+   }
+
+   &-img_container {
+      margin: 20px;
+      &:not(:last-child) {
+         margin-right: 50px;
+      }
+      padding: 10px;
+      background: #fff;
+      box-shadow: #8d8d8d 10px -10px 0 0, #fff 10px -10px 0 0, #fff 16px -15px 0 0, #fff 16px -5px 0 0, #fff 15px -5px 0 0, #fff 5px -15px 0 0;
+   }
+
+   &-text {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+   }
+
+   & .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 105%;
+   }
+
+   .owl-next,
+   .owl-prev {
+    &:hover {
+      background-color: transparent !important;
+    }
+   }
+
+}
+.dotline_bx1 {
+   width: 60px;
+   height: 60px;
+   background: #d6e033;
+   border: 10px solid #fff;
+   border-radius: 100px;
+   position: absolute;
+   top: 0;
+   right: 20px;
+}
+
+

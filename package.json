@@ -22,6 +22,7 @@
     "postcss-cli": "^10.1.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.4",
     "owl.carousel": "^2.3.4"

@@ -43,3 +43,26 @@ color: black;
   
 }
 
+.events__text {
+  text-align: right;
+    color: #fff;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.artists__slider {
+
+  &-title {
+    color: #f47920;
+    font-size: 25px;
+  }
+
+  &-name {
+    text-transform: uppercase;
+  }
+
+  &-text {
+
+  }
+}
