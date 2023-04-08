@@ -8397,6 +8397,9 @@ html {
 ul {
   padding: 0; }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin: 0; }
+
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -8447,6 +8450,16 @@ p {
 
 .artists__slider-name {
   text-transform: uppercase; }
+
+.events__text-box2 {
+  text-align: center; }
+
+.events__title-2 {
+  display: inline-block;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0; }
 
 /* Reset and base styles  */
 * {
@@ -8532,7 +8545,8 @@ legend {
   background-size: 70px 70px, 70px 70px;
   overflow-x: hidden !important;
   padding-top: 100px;
-  padding-bottom: 200px; }
+  padding-bottom: 100px;
+  height: 1000px; }
 
 .heading__slider {
   padding: 30px 15px;
@@ -8595,21 +8609,83 @@ legend {
 .floaty-shadow {
   width: 100%; }
 
-.wtf {
+.icon__wtf {
   background-color: white;
   border: 1px solid black;
   display: inline-block;
   padding: 10px;
   padding-top: 40px;
   position: absolute;
+  bottom: -100px;
   width: 150px;
   box-shadow: #485d74bf 8px 8px;
   z-index: 999; }
-  .wtf__container {
-    background-color: #f47920;
-    border: 1px solid black;
-    display: inline-block;
-    padding: 5px 30px; }
+
+.wtf-container {
+  background-color: #f47920;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px 30px; }
+
+.slider__icons {
+  position: relative;
+  height: 500px; }
+
+.icon__round {
+  width: 150px;
+  position: absolute;
+  top: 0px; }
+
+.icon__wow {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-color: white;
+  padding: 25px 10px 10px 10px;
+  box-shadow: #485d74 8px 8px; }
+
+.wow-container {
+  background-color: black;
+  padding: 10px 10px;
+  width: 130px; }
+
+.icon__dotsCube {
+  position: absolute;
+  top: 120px;
+  left: -20px; }
+
+@media screen and (max-width: 600px) {
+  .icon__white-star {
+    display: none; } }
+
+.icon__man {
+  position: absolute;
+  width: 200px;
+  bottom: -100px;
+  right: 30px; }
+
+.man-container {
+  position: relative; }
+
+.man__tap {
+  position: absolute;
+  top: 4%;
+  left: 32%; }
+  .man__tap img {
+    width: 35px; }
+
+.tap__clockwise {
+  animation: clockwise 4s linear infinite; }
+
+.tap__counterclockwise {
+  transform: rotate(25deg);
+  animation: clockwise 4s linear infinite reverse; }
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .adv-slider__indicators [data-bs-target] {
   background-color: black;
@@ -8788,6 +8864,9 @@ legend {
   position: absolute;
   top: 0;
   right: 20px; }
+
+.burger-menu {
+  background-color: black; }
 
 .header {
   background-color: black;

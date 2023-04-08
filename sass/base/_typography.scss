@@ -61,8 +61,16 @@ color: black;
   &-name {
     text-transform: uppercase;
   }
+}
 
-  &-text {
+.events__text-box2 {
+  text-align: center;
+}
 
-  }
+.events__title-2 {
+  display: inline-block;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
 }

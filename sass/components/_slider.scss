@@ -1,106 +1,187 @@
 .slider {
-  position: relative;
-  background-color: black;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
-  background-size: 70px 70px, 70px 70px;
-  overflow-x: hidden!important;
-  padding-top: 100px;
-  padding-bottom: 200px;
+   position: relative;
+   background-color: black;
+   background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+   background-size: 70px 70px, 70px 70px;
+   overflow-x: hidden !important;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   height: 1000px;
 }
 
 .heading__slider {
-  padding: 30px 15px;
-  background-color: white;
-  box-shadow: #f47920 7px 7px;
-  z-index: 1;
+   padding: 30px 15px;
+   background-color: white;
+   box-shadow: #f47920 7px 7px;
+   z-index: 1;
 
-  @media screen and (min-width:992px) {
-    width: 75% !important;
-    margin-left: auto;
-  }
+   @media screen and (min-width: 992px) {
+      width: 75% !important;
+      margin-left: auto;
+   }
 }
 
 .carousel-inner {
-  overflow: visible;
+   overflow: visible;
 }
 
 .carousel-item {
-  position: relative !important;
+   position: relative !important;
 }
 
 .carousel-caption {
-  position: absolute !important;
-  top: 100px !important;
-  left: -80% !important;
-  z-index: 100;
+   position: absolute !important;
+   top: 100px !important;
+   left: -80% !important;
+   z-index: 100;
 
-  @include respond (mobile) {
-    top: -120px !important;
-    left: 0 !important;
-  }
-
+   @include respond(mobile) {
+      top: -120px !important;
+      left: 0 !important;
+   }
 }
 
 .slider__caption {
-  display: inline;
-  padding: 15px;
-  background-color: white;
-
-  @include respond (mobile) {
-   font-size: 20px;
-   display: inline-block;
-   width: 100%;
-  }
+   display: inline;
+   padding: 15px;
+   background-color: white;
+   @include respond(mobile) {
+      font-size: 20px;
+      display: inline-block;
+      width: 100%;
+   }
 }
 
 .header__carousel-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: black;
-  box-shadow: #fff -4px -1px 0;
-  position: absolute;
-  top: 50%;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: black;
+   box-shadow: #fff -4px -1px 0;
+   position: absolute;
+   top: 50%;
 
-  & svg {
-    fill: white;
-    padding: 5px;
-  }
+   & svg {
+      fill: white;
+      padding: 5px;
+   }
 }
 
 .carousel-control-next {
-  opacity: 1;
+   opacity: 1;
 }
 
 .background-slider {
-  width: 60%;
-  position: absolute;
-  top: -70px;
-  right: 0;
-  z-index: 0;
+   width: 60%;
+   position: absolute;
+   top: -70px;
+   right: 0;
+   z-index: 0;
 }
 
 .floaty-shadow {
-  width: 100%;
+   width: 100%;
 }
 
-.wtf {
-  background-color: white;
-  border: 1px solid black;
-  display: inline-block;
-  padding: 10px;
-  padding-top: 40px;
-  position: absolute;
-  width: 150px;
-  box-shadow: #485d74bf 8px 8px;
-  z-index: 999;
+.icon__wtf {
+   background-color: white;
+   border: 1px solid black;
+   display: inline-block;
+   padding: 10px;
+   padding-top: 40px;
+   position: absolute;
+   bottom: -100px;
+   width: 150px;
+   box-shadow: #485d74bf 8px 8px;
+   z-index: 999;
+}
 
-  &__container {
-    background-color: #f47920;
-    border: 1px solid black;
-    display: inline-block;
-    padding: 5px 30px;
+.wtf-container {
+   background-color: #f47920;
+   border: 1px solid black;
+   display: inline-block;
+   padding: 5px 30px;
+}
+
+.slider__icons {
+   position: relative;
+   height: 500px;
+}
+
+.icon__round {
+   width: 150px;
+   position: absolute;
+   top: 0px;
+}
+
+.icon__wow {
+   position: absolute;
+   top: 100px;
+   right: 0;
+   background-color: white;
+   padding: 25px 10px 10px 10px;
+   box-shadow: #485d74 8px 8px;
+}
+
+.wow-container {
+   background-color: black;
+   padding: 10px 10px;
+   width: 130px;
+}
+
+.icon__dotsCube {
+   position: absolute;
+   top: 120px;
+   left: -20px;
+}
+
+.icon__white-star {
+   @media screen and (max-width: 600px) {
+      display: none;
+   }
+}
+
+.icon__man {
+   position: absolute;
+   width: 200px;
+   bottom: -100px;
+   right: 30px;
+}
+
+.man-container {
+   position: relative;
+}
+
+.man {
+   &__tap {
+      position: absolute;
+      top: 4%;
+      left: 32%;
+
+      & img {
+         width: 35px;
+      }
+   }
+}
+
+.tap {
+
+  &__clockwise {
+    animation: clockwise 4s linear infinite;
   }
-  
 
+  &__counterclockwise {
+    transform: rotate(25deg);
+    animation: clockwise 4s linear infinite reverse;
+  }
+}
+
+@keyframes clockwise {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
 }
