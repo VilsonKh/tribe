@@ -8662,7 +8662,8 @@ legend {
   position: absolute;
   width: 200px;
   bottom: -100px;
-  right: 30px; }
+  right: 30px;
+  z-index: 1; }
 
 .man-container {
   position: relative; }
@@ -8686,6 +8687,26 @@ legend {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.icon__lights {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 100px; }
+
+.icon__eye {
+  display: inline-block;
+  position: absolute;
+  top: 300px; }
+
+.eye-container {
+  position: relative; }
+
+.iris {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 40px; }
 
 .adv-slider__indicators [data-bs-target] {
   background-color: black;
@@ -8893,7 +8914,9 @@ legend {
   background-color: #d6e033;
   background-image: linear-gradient(rgba(0, 0, 0, 0) 69px, rgba(0, 0, 0, 0.13) 69px, rgba(0, 0, 0, 0.05) 70px), linear-gradient(90deg, rgba(0, 0, 0, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
   background-size: 70px 70px, 70px 70px;
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  padding-bottom: 500px;
+  position: relative; }
   .about__img-container {
     width: 95%;
     background-color: white;
@@ -8925,12 +8948,141 @@ legend {
     margin-left: 10%;
     position: relative; }
     .about__link::after {
-      content: '';
+      content: "";
       display: block;
       width: 50px;
       height: 2px;
       position: absolute;
       top: -10px; }
+
+.icons__x {
+  position: relative; }
+
+.x-first {
+  width: 10%;
+  position: relative;
+  z-index: 1; }
+
+.x-second {
+  width: 20%;
+  position: absolute;
+  top: 50px; }
+
+.x-dots {
+  width: 20%;
+  position: absolute;
+  top: 15px;
+  left: 15px; }
+
+.icons__micro {
+  margin-left: auto;
+  width: 250px;
+  position: relative; }
+
+.microphone-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 10; }
+  .microphone-container img {
+    width: 100%; }
+
+.lights-right {
+  width: 120px;
+  position: absolute;
+  top: -50%;
+  left: 60%;
+  transform: scale(-1, 1); }
+
+.lights-left {
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%); }
+
+.burst {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.about-icon__round {
+  width: 150px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 1; }
+
+.icon__lines {
+  width: 150px;
+  transform: scale(-1, 1);
+  position: absolute;
+  left: 30%;
+  top: 70%; }
+
+.cube {
+  position: absolute;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(30deg);
+  animation: rotate 6s linear infinite;
+  perspective: 1000px; }
+  .cube:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: mask 6s linear infinite; }
+  .cube__side {
+    border-radius: 10px;
+    font-size: 62px;
+    width: 1em;
+    height: 1em;
+    margin: -0.5em 0 0 -0.5em;
+    border: 1px solid;
+    transform-style: preserve-3d;
+    border: 1px solid #3e3d3d; }
+    .cube__side:nth-child(1) {
+      transform: translateZ(0.5em);
+      background-image: url(../img/cube.jpg);
+      background-repeat: no-repeat; }
+    .cube__side:nth-child(2) {
+      transform: rotateY(-90deg) translateZ(0.5em);
+      background-image: url(../img/cube.jpg);
+      background-repeat: no-repeat;
+      background-position: -60px 0px; }
+    .cube__side:nth-child(3) {
+      background-image: url(../img/cube.jpg);
+      transform: rotateX(90deg) translateZ(0.5em);
+      background-repeat: no-repeat;
+      background-position: -122px 0px; }
+    .cube__side:nth-child(4) {
+      transform: rotateY(180deg) translateZ(0.5em);
+      background-image: url(../img/cube.jpg);
+      background-repeat: no-repeat;
+      background-position: -183px 0px; }
+      .cube__side:nth-child(4):nth-child(5) {
+        background-image: url(../img/cube.jpg);
+        transform: rotateY(90deg) translateZ(0.5em);
+        background-repeat: no-repeat;
+        background-position: -241px 0; }
+      .cube__side:nth-child(4):nth-child(6) {
+        transform: rotateX(-90deg) translateZ(0.5em); }
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(-30deg) rotateY(-150deg); }
+  100% {
+    transform: rotateX(-30deg) rotateY(210deg); } }
 
 .stats {
   background-color: #d6e033;
