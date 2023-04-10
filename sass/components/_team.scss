@@ -1,53 +1,107 @@
 .team {
-  background-color: black;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px), linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
-  background-size: 70px 70px, 70px 70px;
-  overflow-x: hidden!important;
-  &__img {
-    padding: 50px 10px;
-    background-color: white;
-    border: 2px solid black;
-    box-shadow: #485d74bf -8px 8px;
-    & img {
-      border: 2px solid black;
-    }
-  }
+   background-color: black;
+   background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+   background-size: 70px 70px, 70px 70px;
+   overflow-x: hidden !important;
+   z-index: 1;
+   position: relative;
+   padding-bottom: 250px;
 
-  &__text {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   align-items: flex-end;
-   margin-top: 25px;
-   margin-bottom: 15px;
-
-    &-p1 {
-      display: inline-block;
-      background-color: white;
-      border: 1px solid black;
-      padding: 5px;
-      box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
-      letter-spacing: -1px;
+   & .container {
       position: relative;
-      right: 5%;
-    }
-  
-    &-p2 {
-      display: inline-block;
+   }
+
+   &__img {
+      padding: 50px 20px 20px 20px;
       background-color: white;
-      border: 1px solid black;
-      padding: 5px 30px;
-      width: 90%;
+      border: 2px solid black;
+      box-shadow: #485d74bf -8px 8px;
+      position: relative;
+      z-index: 1;
+      & img {
+         border: 2px solid black;
+      }
+   }
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 150px;
+      transform: translateX(-50%);
+
+      &-p1 {
+         display: inline-block;
+         background-color: white;
+         border: 1px solid black;
+         padding: 5px;
+         box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
+         letter-spacing: -1px;
+         position: relative;
+         right: 5%;
+      }
+
+      &-p2 {
+         display: inline-block;
+         background-color: white;
+         border: 1px solid black;
+         padding: 5px 30px;
+         width: 90%;
+         text-align: center;
+      }
+   }
+
+   &__link {
+      display: block;
+      color: white !important;
+      margin: 0 auto;
       text-align: center;
-  
-    }
-  }
+   }
+}
 
-  &__link {
-    display: block ;
-    color: white !important;
-    margin: 0 auto;
-    text-align: center;
-  }
+.team__icons {
+   position: relative;
+}
 
+.team-lines {
+   width: 200px;
+   transform: scale(1, -1);
+   position: absolute;
+   left: 30%;
+   top: -250px;
+}
+
+.team-qz {
+  position: relative;
+  top: 150px;
+  z-index: 1;
+}
+
+.qz-1 {
+  width: 70px;
+  position: absolute;
+  z-index: 1;
+}
+
+.qz-2 {
+  width: 100px;
+  opacity: .3;
+  position: absolute;
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
+.team-skate {
+  width: 100px;
+  position: absolute;
+  top: 200px;
+  right: 10%;
+  z-index: 3;
 }

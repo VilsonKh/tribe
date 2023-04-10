@@ -1,25 +1,91 @@
 .events {
-  background: #f47920;
-    background-image: linear-gradient(rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.13) 69px, rgba(0, 0, 0, 0.05) 70px), linear-gradient(90deg, rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
-    background-size: 70px 70px, 70px 70px; 
+   background: #f47920;
+   background-image: linear-gradient(rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.13) 69px, rgba(0, 0, 0, 0.05) 70px),
+      linear-gradient(90deg, rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
+   background-size: 70px 70px, 70px 70px;
+   position: relative;
+   padding-bottom: 300px;
+   padding-top: 300px;
+
+   & .container {
+      position: relative;
+   }
+
+   &__text-box1 {
+    text-align: center;
+   }
+
+   &__title {
+    display: inline-block;
+    background: #fff;
+    padding: 5px 20px;
+    border: 1px solid #000;
     position: relative;
-    padding-bottom: 300px !important;
+    right: 11px;
+    box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
+    margin-bottom: 10px;
+  }
+
+   &__subtitle {
+    box-shadow: #485d74bf 8px 8px;
+   background: #fff;
+   padding: 5px 20px;
+   border: 1px solid #000;
+   margin: -7px 0;
+   position: relative;
+   z-index: 1;
+   margin-bottom: 30px;
+  }
+
+  &__slider-container{
+    padding: 30px 10px 10px 10px;
+    background-color: white;
+    box-shadow: #485d74bf 8px 8px;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    font-size: 25px;
+    color: #000;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+  }
 }
 
 .events__slider {
-  display: flex !important;
-  flex-direction: row-reverse;
-  position: relative !important;
-  left: -10%;
+   display: flex !important;
+   flex-direction: row-reverse;
+   position: relative !important;
+   left: -10%;
 
-  @media screen and (max-width:600px) {
-    left: 0;
-  }
-} 
+   @media screen and (max-width: 600px) {
+      left: 0;
+   }
+}
 
 .events .owl-nav {
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  transform: translateY(-50%);
+   position: absolute;
+   right: -10px;
+   top: 50%;
+   transform: translateY(-50%);
 }
+
+.events__yes {
+   width: 140px;
+   border: 1px solid #000;
+   display: inline-block;
+   padding: 20px 7px 7px;
+   background: #fff;
+   box-shadow: #485d74bf 8px 8px;
+   position: absolute;
+   top: -270px;
+   right:5%;
+
+   &-container {
+      background-color: black;
+      padding: 5px;
+   }
+}
+
+
