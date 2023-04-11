@@ -83,6 +83,7 @@
 .cube {
   position: absolute;
   left: 50%;
+  z-index: 999;
 
   &-container {
      transform-style: preserve-3d;

@@ -5,13 +5,23 @@
    background-size: 70px 70px, 70px 70px;
    overflow-x: hidden !important;
    padding-bottom: 500px;
+
    position: relative;
+ 
+   @media screen and (min-width:700px) {
+    padding-top:200px ;
+    padding-bottom: 200px;;
+   }
 
    &__img-container {
       width: 95%;
       background-color: white;
-      padding: 15px 10px;
+      padding: 25px 10px;
       box-shadow: #485d74bf 8px 8px;
+
+      @media screen and (min-width:700px){
+        width: 65%;
+      }
    }
 
    &__img {
@@ -43,10 +53,17 @@
       margin: 0;
    }
 
+   &__text {
+    color:#8d8d8d;
+    font-family: "Times",sans-serif;
+   }
+
    &__link {
       color: black;
       margin-left: 10%;
       position: relative;
+      font-family: "trounblefont";
+      letter-spacing: 2px;
 
       &::after {
          content: "";
@@ -140,3 +157,38 @@
    left: 30%;
    top: 70%;
 }
+
+
+
+.about-waves {
+  position: absolute;
+  right: 10%;
+  top: 300px;
+}
+
+.about-x-2 {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: 50px;
+}
+
+.about-dots {
+  width: 135px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-x-orange {
+  width: 40px;
+  position: relative;
+  top: -80px;
+  right: 30px;
+}
+
+.about-x-blue {
+  width: 70px;
+  position: relative;
+  left: 60px;
+}
+

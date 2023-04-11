@@ -8,6 +8,7 @@
 
 html {
 min-width: 320px;
+cursor: url(../img/cursor.png), auto;
 }
 
 ul {
@@ -18,10 +19,24 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  
+@font-face {
+  font-family: 'dinbt';
+  src: url('../font/dinbd.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'troublefont';
+  src: url('../font/troublefont.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'dinbt', sans-serif;
+}
+
 
 .container {
   width: auto !important;

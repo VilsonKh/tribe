@@ -4,7 +4,7 @@
       linear-gradient(90deg, rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
    background-size: 70px 70px, 70px 70px;
    position: relative;
-   padding-bottom: 300px;
+   padding-bottom: 50px;
    padding-top: 300px;
 
    & .container {
@@ -13,6 +13,13 @@
 
    &__text-box1 {
     text-align: center;
+    position: relative;
+    z-index: 100;
+   }
+
+   &__text-box2 {
+    position: relative;
+    z-index: 100;
    }
 
    &__title {
@@ -50,6 +57,7 @@
     letter-spacing: 2px;
     display: block;
     text-align: center;
+    margin-bottom: 300px;
   }
 }
 
@@ -88,4 +96,44 @@
    }
 }
 
+.events-x {
+  width: 40px;
+  position: absolute;
+  top: -200px;
+
+  & svg {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.events-dottedCube {
+  position: relative;
+  top: -70px;
+  left: -50%;
+  z-index: 0;
+}
+
+.events-round {
+  width: 240px;
+  position: absolute;
+  left: 50%;
+  top: -200px;
+  transform: translateX(-50%);
+}
+
+.events-circles {
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  left: 10%
+}
+
+.events-man {
+  width: 185px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -250px;
+}
 
