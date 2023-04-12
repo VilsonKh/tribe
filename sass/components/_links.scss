@@ -16,6 +16,10 @@
     border: 1px solid black;
     padding: 5px 30px;
     margin: 0;
+    font-size: 31px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
   }
 
   &__list {

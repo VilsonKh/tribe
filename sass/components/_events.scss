@@ -7,6 +7,14 @@
    padding-bottom: 50px;
    padding-top: 300px;
 
+  &__slider {
+    & .owl-item {
+      padding: 30px 10px 10px 10px;
+      background-color: white;
+      box-shadow: #485d74bf 8px 8px;
+    }
+  }
+
    & .container {
       position: relative;
    }
@@ -31,6 +39,13 @@
     right: 11px;
     box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
     margin-bottom: 10px;
+    font-size: 31px;
+    font-weight: 700;
+  }
+
+  &__title-2 {
+    font-size: 30px;
+    font-weight: 700;
   }
 
    &__subtitle {
@@ -42,14 +57,20 @@
    position: relative;
    z-index: 1;
    margin-bottom: 30px;
+   color: #8d8d8d;
+   font-size: 21px;
+
+   @media (min-width:1440px){
+    display: inline-block;
+  }
   }
 
   &__slider-container{
-    padding: 30px 10px 10px 10px;
-    background-color: white;
-    box-shadow: #485d74bf 8px 8px;
+   
     margin-bottom: 50px;
   }
+
+
 
   &__link {
     font-size: 25px;

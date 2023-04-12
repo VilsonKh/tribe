@@ -22,6 +22,13 @@
    }
 }
 
+#carouselItems {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    top: 200px;
+  }
+}
+
 .carousel-inner {
    overflow: visible;
 }
@@ -33,13 +40,20 @@
 .carousel-caption {
    position: absolute !important;
    top: 100px !important;
-   left: -80% !important;
+   left: 10% !important;
    z-index: 100;
-   font-family: 'troublefont',sans-serif;
-   
+   font-family: 'Times',sans;
+   text-align: left;
+   display: block;
+   width: 100% !important;
+   background-color: white;
+  height: fit-content;
+  width: 50% !important;
+  display: inline-block !important;
+
    @include respond(mobile) {
-      top: -120px !important;
-      left: 0 !important;
+      top: -150px !important;
+      left: 0% !important;
    }
 
    @media screen and (min-width:700px) {
@@ -47,6 +61,10 @@
 
     @media screen and (min-width:1000px) {
       left: -50% !important;
+    }
+
+    @media screen and (min-width: 1440px) {
+      left: -10% !important;
     }
    }
 }
@@ -57,13 +75,11 @@
    background-color: white;
 
    @include respond(mobile) {
-      font-size: 40px;
+      font-size: 30px;
       line-height: 0.8;
       display: inline-block;
       width: 100%;
    }
-
-   
 }
 
 .header__carousel-btn {
@@ -112,6 +128,11 @@
    @media screen and (min-width:1000px){
     bottom: -300px;
    }
+
+   @media (min-width:1440px){
+    bottom: -100px;
+    left: 20%;
+   }
 }
 
 .wtf-container {
@@ -124,6 +145,12 @@
 .slider__icons {
    position: relative;
    height: 500px;
+
+   @media screen and (min-width:1440px) {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+   }
 }
 
 .icon__round {
@@ -134,6 +161,11 @@
    @media (min-width:700px){
     width: 270px;
    }
+
+   @media (min-width:1440px){
+    top: 210px;
+    left: 300px;
+   }
 }
 
 .icon__wow {
@@ -143,6 +175,10 @@
    background-color: white;
    padding: 25px 10px 10px 10px;
    box-shadow: #485d74 8px 8px;
+
+   @media (min-width:1440px){
+    right: 10%;
+   }   
 }
 
 .wow-container {
@@ -155,11 +191,23 @@
    position: absolute;
    top: 120px;
    left: -20px;
+
+   @media (min-width:1440px){
+    width: 270px;
+    top: -50px;
+    left: 100px;
+   }
 }
 
 .icon__white-star {
    @media screen and (max-width: 600px) {
       display: none;
+   }
+
+   @media (min-width:1440px){
+    position: absolute;
+    right: 20%;
+    bottom: -20%;
    }
 }
 
@@ -169,6 +217,10 @@
    bottom: -100px;
    right: 30px;
    z-index: 1;
+
+   @media (min-width:1440px){
+    right: 25%;
+   }
 }
 
 .man-container {
@@ -225,6 +277,11 @@
     top: 700px;
     left: 300px;
   }
+
+  @media (min-width:1440px){
+    top: 380px;
+    left: 520px;
+   }
 }
 
 .eye-container {

@@ -8414,7 +8414,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-style: normal; }
 
 body {
-  font-family: 'dinbt', sans-serif; }
+  font-family: 'Times', sans-serif; }
 
 .container {
   width: auto !important; }
@@ -8442,13 +8442,14 @@ p {
 .stats__item-digits {
   display: inline;
   color: #f47920;
-  font-size: 56px;
+  font-size: 40px;
   margin: 0 auto; }
 
 .team {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
-  color: black; }
+  color: black;
+  text-align: center; }
 
 .events__text {
   text-align: right;
@@ -8570,6 +8571,11 @@ legend {
       width: 75% !important;
       margin-left: auto; } }
 
+@media screen and (min-width: 1440px) {
+  #carouselItems {
+    position: relative;
+    top: 200px; } }
+
 .carousel-inner {
   overflow: visible; }
 
@@ -8579,19 +8585,29 @@ legend {
 .carousel-caption {
   position: absolute !important;
   top: 100px !important;
-  left: -80% !important;
+  left: 10% !important;
   z-index: 100;
-  font-family: 'troublefont',sans-serif; }
+  font-family: 'Times',sans;
+  text-align: left;
+  display: block;
+  width: 100% !important;
+  background-color: white;
+  height: fit-content;
+  width: 50% !important;
+  display: inline-block !important; }
   @media only screen and (max-width: 600px) {
     .carousel-caption {
-      top: -120px !important;
-      left: 0 !important; } }
+      top: -150px !important;
+      left: 0% !important; } }
   @media screen and (min-width: 700px) {
     .carousel-caption {
       left: -19% !important; } }
   @media screen and (min-width: 700px) and (min-width: 1000px) {
     .carousel-caption {
       left: -50% !important; } }
+  @media screen and (min-width: 700px) and (min-width: 1440px) {
+    .carousel-caption {
+      left: -10% !important; } }
 
 .slider__caption {
   display: inline;
@@ -8599,7 +8615,7 @@ legend {
   background-color: white; }
   @media only screen and (max-width: 600px) {
     .slider__caption {
-      font-size: 40px;
+      font-size: 30px;
       line-height: 0.8;
       display: inline-block;
       width: 100%; } }
@@ -8643,6 +8659,10 @@ legend {
   @media screen and (min-width: 1000px) {
     .icon__wtf {
       bottom: -300px; } }
+  @media (min-width: 1440px) {
+    .icon__wtf {
+      bottom: -100px;
+      left: 20%; } }
 
 .wtf-container {
   background-color: #f47920;
@@ -8653,6 +8673,11 @@ legend {
 .slider__icons {
   position: relative;
   height: 500px; }
+  @media screen and (min-width: 1440px) {
+    .slider__icons {
+      position: absolute;
+      z-index: 100;
+      width: 100%; } }
 
 .icon__round {
   width: 150px;
@@ -8661,6 +8686,10 @@ legend {
   @media (min-width: 700px) {
     .icon__round {
       width: 270px; } }
+  @media (min-width: 1440px) {
+    .icon__round {
+      top: 210px;
+      left: 300px; } }
 
 .icon__wow {
   position: absolute;
@@ -8669,6 +8698,9 @@ legend {
   background-color: white;
   padding: 25px 10px 10px 10px;
   box-shadow: #485d74 8px 8px; }
+  @media (min-width: 1440px) {
+    .icon__wow {
+      right: 10%; } }
 
 .wow-container {
   background-color: black;
@@ -8679,10 +8711,21 @@ legend {
   position: absolute;
   top: 120px;
   left: -20px; }
+  @media (min-width: 1440px) {
+    .icon__dotsCube {
+      width: 270px;
+      top: -50px;
+      left: 100px; } }
 
 @media screen and (max-width: 600px) {
   .icon__white-star {
     display: none; } }
+
+@media (min-width: 1440px) {
+  .icon__white-star {
+    position: absolute;
+    right: 20%;
+    bottom: -20%; } }
 
 .icon__man {
   position: absolute;
@@ -8690,6 +8733,9 @@ legend {
   bottom: -100px;
   right: 30px;
   z-index: 1; }
+  @media (min-width: 1440px) {
+    .icon__man {
+      right: 25%; } }
 
 .man-container {
   position: relative; }
@@ -8729,6 +8775,10 @@ legend {
     .icon__eye {
       top: 700px;
       left: 300px; } }
+  @media (min-width: 1440px) {
+    .icon__eye {
+      top: 380px;
+      left: 520px; } }
 
 .eye-container {
   position: relative; }
@@ -8828,7 +8878,8 @@ legend {
   overflow-x: hidden !important;
   z-index: 1;
   position: relative;
-  padding-bottom: 250px; }
+  padding-bottom: 300px;
+  height: 100%; }
   .team .container {
     position: relative; }
   .team__img {
@@ -8837,7 +8888,7 @@ legend {
     border: 2px solid black;
     box-shadow: #485d74bf -8px 8px;
     position: relative;
-    z-index: 1; }
+    z-index: 10; }
     .team__img img {
       border: 2px solid black; }
     @media screen and (min-width: 1000px) {
@@ -8848,70 +8899,85 @@ legend {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
     margin-top: 25px;
     margin-bottom: 15px;
     position: absolute;
-    z-index: 1;
-    left: 50%;
+    z-index: 10;
+    left: 10%;
     top: 150px;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    width: 100%; }
     @media screen and (min-width: 700px) {
       .team__text {
         top: 440px; } }
+    @media (min-width: 1440px) {
+      .team__text {
+        width: 50%;
+        top: 50%;
+        z-index: 999; } }
     .team__text-p1 {
-      display: inline-block;
+      display: block;
       background-color: white;
       border: 1px solid black;
       padding: 5px;
       box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
       letter-spacing: -1px;
       position: relative;
-      right: 5%; }
+      right: 5%;
+      width: 100% !important; }
     .team__text-p2 {
       display: inline-block;
       background-color: white;
       border: 1px solid black;
       padding: 5px 30px;
       width: 90%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 20px; }
   .team__link {
     display: block;
     color: white !important;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    font-size: 20px; }
 
 .team__icons {
-  position: relative; }
+  position: relative;
+  z-index: 999;
+  height: 100px; }
 
 .team-lines {
   width: 200px;
   transform: scale(1, -1);
   position: absolute;
   left: 30%;
-  top: -250px; }
+  top: -250px;
+  z-index: 1; }
+  @media (min-width: 1440px) {
+    .team-lines {
+      top: 0; } }
 
 .team-qz {
-  position: relative;
+  position: absolute;
   top: 150px;
   z-index: 1; }
 
 .qz-1 {
   width: 70px;
-  position: absolute;
-  z-index: 1; }
+  position: relative;
+  z-index: 2; }
 
 .qz-2 {
   width: 100px;
   opacity: .3;
-  position: absolute;
+  position: relative;
+  left: -70px;
   transform: rotate(-15deg);
   z-index: 1; }
 
 .team-skate {
   width: 100px;
   position: absolute;
-  top: 200px;
+  top: 250px;
   right: 10%;
   z-index: 3; }
 
@@ -8922,6 +8988,10 @@ legend {
   position: relative;
   padding-bottom: 50px;
   padding-top: 300px; }
+  .events__slider .owl-item {
+    padding: 30px 10px 10px 10px;
+    background-color: white;
+    box-shadow: #485d74bf 8px 8px; }
   .events .container {
     position: relative; }
   .events__text-box1 {
@@ -8939,7 +9009,12 @@ legend {
     position: relative;
     right: 11px;
     box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 31px;
+    font-weight: 700; }
+  .events__title-2 {
+    font-size: 30px;
+    font-weight: 700; }
   .events__subtitle {
     box-shadow: #485d74bf 8px 8px;
     background: #fff;
@@ -8948,11 +9023,13 @@ legend {
     margin: -7px 0;
     position: relative;
     z-index: 1;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #8d8d8d;
+    font-size: 21px; }
+    @media (min-width: 1440px) {
+      .events__subtitle {
+        display: inline-block; } }
   .events__slider-container {
-    padding: 30px 10px 10px 10px;
-    background-color: white;
-    box-shadow: #485d74bf 8px 8px;
     margin-bottom: 50px; }
   .events__link {
     font-size: 25px;
@@ -9038,7 +9115,11 @@ legend {
     background-color: white;
     border: 1px solid black;
     padding: 5px 30px;
-    margin: 0; }
+    margin: 0;
+    font-size: 31px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2; }
   .links__list {
     display: flex;
     flex-wrap: wrap;
@@ -9285,12 +9366,18 @@ legend {
   background-image: linear-gradient(rgba(0, 0, 0, 0) 69px, rgba(0, 0, 0, 0.13) 69px, rgba(0, 0, 0, 0.05) 70px), linear-gradient(90deg, rgba(0, 0, 0, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
   background-size: 70px 70px, 70px 70px;
   overflow-x: hidden !important;
-  padding-bottom: 500px;
+  padding-bottom: 0px;
+  height: 100%;
   position: relative; }
   @media screen and (min-width: 700px) {
     .about {
       padding-top: 200px;
       padding-bottom: 200px; } }
+  @media (min-width: 700px) {
+    .about {
+      padding-top: 400px; } }
+  .about .container {
+    position: relative; }
   .about__img-container {
     width: 95%;
     background-color: white;
@@ -9301,13 +9388,20 @@ legend {
         width: 65%; } }
   .about__img {
     width: 100%; }
-  .about__text-container {
+  .about__text-outer {
     width: 90%;
+    position: relative; }
+    @media (min-width: 1440px) {
+      .about__text-outer {
+        width: 50%;
+        top: -300px;
+        right: -700px;
+        z-index: 999; } }
+  .about__text-container {
     background-color: white;
     outline: 1px solid black;
     box-shadow: #00000091 8px 8px 0 0;
     padding: 20px 10px;
-    position: relative;
     margin: -20px 0 30px;
     margin-left: auto; }
   .about__heading {
@@ -9325,10 +9419,11 @@ legend {
     font-family: "Times",sans-serif; }
   .about__link {
     color: black;
-    margin-left: 10%;
+    margin-left: 30%;
     position: relative;
     font-family: "trounblefont";
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    display: inline-block; }
     .about__link::after {
       content: "";
       display: block;
@@ -9359,11 +9454,12 @@ legend {
 .icons__micro {
   margin-left: auto;
   width: 250px;
-  position: relative; }
+  position: relative;
+  top: 130px; }
 
 .microphone-container {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50px;
@@ -9374,7 +9470,7 @@ legend {
 .lights-right {
   width: 120px;
   position: absolute;
-  top: -50%;
+  top: -70px;
   left: 60%;
   transform: scale(-1, 1); }
 
@@ -9395,7 +9491,7 @@ legend {
 .about-icon__round {
   width: 150px;
   position: absolute;
-  top: 70%;
+  top: 100%;
   left: 50%;
   z-index: 1; }
 
@@ -9404,7 +9500,7 @@ legend {
   transform: scale(-1, 1);
   position: absolute;
   left: 30%;
-  top: 70%; }
+  top: 1200px; }
 
 .about-waves {
   position: absolute;
@@ -9443,20 +9539,30 @@ legend {
     .stats {
       padding-bottom: 0; } }
   .stats__digits {
-    padding: 70px 40px 10px 77px;
+    padding: 70px 40px 10px 40px;
     background-color: white;
     box-shadow: #485d74bf -8px 8px;
     z-index: 1;
     position: relative; }
+    @media (min-width: 1440px) {
+      .stats__digits {
+        width: 85%;
+        margin-left: auto; } }
   .stats__item {
     padding: 0;
     text-align: center; }
   .stats__item-title {
     width: 80%;
     margin: 0 auto; }
+    @media (min-width: 1440px) {
+      .stats__item-title {
+        font-size: 30px; } }
   .stats__item-digits {
     width: 80%;
     margin: 0 auto; }
+    @media (min-width: 1440px) {
+      .stats__item-digits {
+        font-size: 45px; } }
   .stats__heading {
     text-align: center;
     position: relative;
@@ -9468,12 +9574,14 @@ legend {
     padding: 5px 10px;
     border: 1px solid black;
     box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 25px; }
   .stats__title-p2 {
     display: inline-block;
     padding: 5px 10px;
     background-color: white;
-    border: 1px solid black; }
+    border: 1px solid black;
+    font-size: 25px; }
   .stats__img {
     width: 170px;
     background-color: white;
