@@ -141,12 +141,16 @@
 		}
 	}
 
-	&__lead-text-inner {
-		font-family: "troublefont";
-		font-size: 44px;
+	&__lead-text-container {
+
+		font-size: 34px;
 		letter-spacing: 1px;
 		line-height: 1;
 		font-weight: 700;
+		font-family: "troublefont";
+	}
+
+	&__lead-text-inner {
 		text-shadow: -6px 3px 0 #484141, -10px 11px 0 #00000038;
 		color: white;
 	}

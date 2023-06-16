@@ -58,9 +58,12 @@
 .leftSlider {
 	&__item {
 		position: relative;
-		max-width: 300px;
     min-width: 280px;
 		height: 350px;
+	}
+
+	&__item-inner {
+		
 	}
 
 	&__textBox {

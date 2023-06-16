@@ -8,13 +8,15 @@
 
 html {
 cursor: url(../img/cursor.png), auto;
-
 }
 
 body {
-  overflow-x: hidden;
+ 
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
 
 a {
   transition: all .3s linear;

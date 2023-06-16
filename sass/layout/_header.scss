@@ -12,6 +12,11 @@
          width: 100%;
       }
    }
+
+   &__item:last-child{
+      padding: 8px 16px !important;
+
+   }
 }
 
 .burger-icon {

@@ -17,608 +17,621 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<header class="header sticky-top p-4 position-relative">
-			<div class="container d-flex justify-content-between align-items-center">
-				<div class="header__logo me-4">
-					<img src="img/tribe_vibe.png" alt="logo" />
+		<!-- обертка нужна для overflow в safari -->
+	<div class="wrapper">
+			<header class="header sticky-top p-4 position-relative">
+				<div class="container d-flex justify-content-between align-items-center">
+					<div class="header__logo me-4">
+						<img src="img/tribe_vibe.png" alt="logo" />
+					</div>
+	
+					<nav class="header__navigation d-none d-xxl-block">
+						<ul class="header__list nav">
+							<li class="nav-item header__item active">
+								<a href="#" class="nav-link text-uppercase" aria-current="page">home</a>
+							</li>
+							<li class="nav-item dropdown header__item ">
+								<a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">the force</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item text-uppercase">strengths</li>
+									<li class="dropdown-item text-uppercase">expertise</li>
+								</ul>
+							</li>
+							<li class="nav-item header__item">
+								<a href="#" class="nav-link text-uppercase">tribe campus program</a>
+							</li>
+							<li class="nav-item header__item">
+								<a href="#" class="nav-link text-uppercase">artists</a>
+							</li>
+							<li class="nav-item header__item">
+								<a href="#" class="nav-link text-uppercase">events</a>
+							</li>
+							<li class="nav-item header__item dropdown">
+								<a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">corporate info</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item text-uppercase">notice of agm</li>
+									<li class="dropdown-item text-uppercase">notice of egm</li>
+									<li class="dropdown-item text-uppercase">annual returns</li>
+									<li class="dropdown-item text-uppercase">directors details</li>
+								</ul>
+							</li>
+							<li class="nav-item header__item">
+								<a href="#" class="nav-link text-uppercase">contact us</a>
+							</li>
+						</ul>
+					</nav>
+	
+					<a href="#" class="header__login text-uppercase ms-auto ms-lg-0 me-4">tcp login</a>
+	
+					<button class="d-xxl-none burger-button">
+						<img class="burger-icon" src="img/icon-burger.svg" alt="burger icon" />
+					</button>
 				</div>
-
-				<nav class="header__navigation d-none d-xxl-block">
-					<ul class="header__list nav">
-						<li class="nav-item header__item active">
-							<a href="#" class="nav-link text-uppercase" aria-current="page">home</a>
-						</li>
-						<li class="nav-item dropdown header__item">
-							<a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">the force</a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-item text-uppercase">strengths</li>
-								<li class="dropdown-item text-uppercase">expertise</li>
-							</ul>
-						</li>
-						<li class="nav-item header__item">
-							<a href="#" class="nav-link text-uppercase">tribe campus program</a>
-						</li>
-						<li class="nav-item header__item">
-							<a href="#" class="nav-link text-uppercase">artists</a>
-						</li>
-						<li class="nav-item header__item">
-							<a href="#" class="nav-link text-uppercase">events</a>
-						</li>
-						<li class="nav-item header__item dropdown">
-							<a href="#" class="nav-link text-uppercase dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">corporate info</a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-item text-uppercase">notice of agm</li>
-								<li class="dropdown-item text-uppercase">notice of egm</li>
-								<li class="dropdown-item text-uppercase">annual returns</li>
-								<li class="dropdown-item text-uppercase">directors details</li>
-							</ul>
-						</li>
-						<li class="nav-item header__item">
-							<a href="#" class="nav-link text-uppercase">contact us</a>
-						</li>
-					</ul>
-				</nav>
-
-				<a href="#" class="header__login text-uppercase ms-auto ms-lg-0 me-4">tcp login</a>
-
-				<button class="d-xxl-none burger-button">
-					<img class="burger-icon" src="img/icon-burger.svg" alt="burger icon" />
-				</button>
-			</div>
-		</header>
-		<nav class="d-lg-none burger-menu">
-			<ul class="header__list nav d-flex flex-column align-items-center">
-				<li class="nav-item header__item">
-					<a href="#" class="nav-link text-uppercase" aria-current="page">home</a>
-				</li>
-				<li class="nav-item header__item">
-					<a href="#" class="nav-link text-uppercase" data-bs-toggle="collapse" data-bs-target="#force" role="button" aria-expanded="false">the force</a>
-					<ul class="collapse" id="force">
-						<li class="text-uppercase text-white">strengths</li>
-						<li class="text-uppercase text-white">expertise</li>
-					</ul>
-				</li>
-				<li class="nav-item header__item">
-					<a href="#" class="nav-link text-uppercase">tribe campus program</a>
-				</li>
-				<li class="nav-item header__item">
-					<a href="#" class="nav-link text-uppercase">artists</a>
-				</li>
-				<li class="nav-item header__item">
-					<a href="#" class="nav-link text-uppercase">events</a>
-				</li>
-				<li class="nav-item header__item">
-					<a href="#" class="nav-link text-uppercase" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" data-bs-target="#corporate">corporate info</a>
-					<ul class="collapse" id="corporate">
-						<li class="text-white text-uppercase">notice of agm</li>
-						<li class="text-white text-uppercase">notice of egm</li>
-						<li class="text-white text-uppercase">annual returns</li>
-						<li class="text-white text-uppercase">directors details</li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<main>
-			<section class="slider">
-				<div class="container">
-					<div id="sliderItems" class="slider__heading carousel slide carousel-fade w-100" data-bs-ride="carousel">
-						<div class="carousel-inner slider__inner">
-							<div class="carousel-item active slider__item">
-								<img src="img/about.webp" class="d-block w-100" alt="events" />
-								<div class="carousel-caption slider__caption-container" data-aos="fade-up">
-									<p class="slider__caption">FOR THE TRIBE THAT CRAVES THE VIBE</p>
+			</header>
+			<nav class=" burger-menu">
+				<ul class="header__list nav d-flex flex-column align-items-center">
+					<li class="nav-item header__item">
+						<a href="#" class="nav-link text-uppercase" aria-current="page">home</a>
+					</li>
+					<li class="nav-item header__item burger-menu__accordion">
+						<a href="#" class="nav-link text-uppercase" data-bs-toggle="collapse" data-bs-target="#force" role="button" aria-expanded="false">the force</a>
+						<ul class="collapse" id="force">
+							<li class="text-uppercase text-white">strengths</li>
+							<li class="text-uppercase text-white">expertise</li>
+						</ul>
+					</li>
+					<li class="nav-item header__item">
+						<a href="#" class="nav-link text-uppercase">tribe campus program</a>
+					</li>
+					<li class="nav-item header__item">
+						<a href="#" class="nav-link text-uppercase">artists</a>
+					</li>
+					<li class="nav-item header__item">
+						<a href="#" class="nav-link text-uppercase">events</a>
+					</li>
+					<li class="nav-item header__item burger-menu__accordion">
+						<a href="#" class="nav-link text-uppercase accordion-button"  data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" data-bs-target="#corporate">corporate info</a>
+						<ul class="collapse" id="corporate">
+							<li class="text-white text-uppercase">notice of agm</li>
+							<li class="text-white text-uppercase">notice of egm</li>
+							<li class="text-white text-uppercase">annual returns</li>
+							<li class="text-white text-uppercase">directors details</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<main>
+				<section class="slider">
+					<div class="container">
+						<div id="sliderItems" class="slider__heading carousel slide carousel-fade w-100" data-bs-ride="carousel">
+							<div class="carousel-inner slider__inner">
+								<div class="carousel-item active slider__item">
+									<img src="img/about.webp" class="d-block w-100" alt="events" />
+									<div class="carousel-caption slider__caption-container" data-aos="fade-up">
+										<p class="slider__caption">FOR THE TRIBE THAT CRAVES THE VIBE</p>
+									</div>
+								</div>
+	
+								<div class="carousel-item slider__item">
+									<img src="img/slider__img.webp" class="d-block w-100" alt="" />
+									<div class="carousel-caption slider__caption-container" data-aos="fade-up">
+										<p class="slider__caption">Lorem ipsum dolor sit amet</p>
+									</div>
 								</div>
 							</div>
-
-							<div class="carousel-item slider__item">
-								<img src="img/slider__img.webp" class="d-block w-100" alt="" />
-								<div class="carousel-caption slider__caption-container" data-aos="fade-up">
-									<p class="slider__caption">Lorem ipsum dolor sit amet</p>
+	
+							<button class="carousel-control-next slider__btn" type="button" data-bs-target="#sliderItems" data-bs-slide="next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 448 512">
+									<path
+										d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+									/>
+								</svg>
+								<span class="visually-hidden">Next</span>
+							</button>
+	
+							<div class="slider__icon-yellowWow" data-aos="slide-up">
+								<div class="slider__icon-yellowWow-container">
+									<img src="img/wow-yellow-icon.svg" alt="" />
 								</div>
 							</div>
 						</div>
-
-						<button class="carousel-control-next slider__btn" type="button" data-bs-target="#sliderItems" data-bs-slide="next">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-								<path
-									d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-								/>
-							</svg>
-							<span class="visually-hidden">Next</span>
-						</button>
-
-						<div class="slider__icon-yellowWow" data-aos="slide-up">
-							<div class="slider__icon-yellowWow-container">
-								<img src="img/wow-yellow-icon.svg" alt="" />
+	
+						<div class="slider__icon-round">
+							<img src="img/icon-white-lines-inRound.svg" alt="lines in round" />
+						</div>
+	
+						<div class="slider__icon-dotsCube">
+							<img src="img/icon-yellow-dotted-cube.svg" alt="dotted cube" />
+						</div>
+					</div>
+				</section>
+	
+				<section class="about">
+					<div class="container">
+						<div class="about__mainInfo">
+							<div class="about__img-container" data-aos="slide-right">
+								<img class="about__img" src="img/about.webp" alt="" />
 							</div>
-						</div>
-					</div>
-
-					<div class="slider__icon-round">
-						<img src="img/icon-white-lines-inRound.svg" alt="lines in round" />
-					</div>
-
-					<div class="slider__icon-dotsCube">
-						<img src="img/icon-yellow-dotted-cube.svg" alt="dotted cube" />
-					</div>
-				</div>
-			</section>
-
-			<section class="about">
-				<div class="container">
-					<div class="about__mainInfo">
-						<div class="about__img-container" data-aos="slide-right">
-							<img class="about__img" src="img/about.webp" alt="" />
-						</div>
-						<div class="about__text-outer">
-							<div class="about__text-container mb-4" data-aos="slide-left">
-								<div class="about__heading">
-									<h2 class="about__title">About US</h2>
+							<div class="about__text-outer">
+								<div class="about__text-container mb-4" data-aos="slide-left">
+									<div class="about__heading">
+										<h2 class="about__title">About US</h2>
+									</div>
+									<div class="about__paragraph">
+										<p class="about__text">
+											TribeVibe Entertainment Pvt. Ltd, a BookMyShow Enterprise established in 2019.TribeVibe primarily created an engagement platform within the college realm to
+											connect brands with Genz. TribeVibe revolutionized the college festival experience with TribeVibe pro nights, Sunburn campus, brand engagements & much more.
+											TribeVibe aims to be the one stop solution for brands to connect with millenials & GenZ to create brand awareness,enhance engagement and extensively acquire
+											social media presence.
+										</p>
+									</div>
 								</div>
-								<div class="about__paragraph">
-									<p class="about__text">
-										TribeVibe Entertainment Pvt. Ltd, a BookMyShow Enterprise established in 2019.TribeVibe primarily created an engagement platform within the college realm to
-										connect brands with Genz. TribeVibe revolutionized the college festival experience with TribeVibe pro nights, Sunburn campus, brand engagements & much more.
-										TribeVibe aims to be the one stop solution for brands to connect with millenials & GenZ to create brand awareness,enhance engagement and extensively acquire
-										social media presence.
-									</p>
+								<a href="#" class="about__link">Know More</a>
+							</div>
+						</div>
+	
+						<div class="about__icon-wtf" data-aos="slide-up">
+							<div class="about__icon-wtf-container">
+								<img src="img/wtf-icon.svg" alt="wtf-icon" />
+							</div>
+						</div>
+	
+						<div class="about__icon-eye">
+							<div class="about__icon-eye-container">
+								<img class="about__icon-eyeball" src="img/eye.png" alt="" />
+								<img class="about__icon-iris" src="img/iris.png" alt="" class="iris" />
+							</div>
+						</div>
+	
+						<div class="about__icon-man">
+							<div class="about__icon-man-container">
+								<img class="about__icon-tapMan" src="img/man.png" />
+								<div class="about__taps">
+									<img class="about__clockwise" src="img/tap.png" alt="tap" />
+									<img class="about__counterclockwise" src="img/tap.png" alt="tap" />
 								</div>
-							</div>
-							<a href="#" class="about__link">Know More</a>
-						</div>
-					</div>
-
-					<div class="about__icon-wtf" data-aos="slide-up">
-						<div class="about__icon-wtf-container">
-							<img src="img/wtf-icon.svg" alt="wtf-icon" />
-						</div>
-					</div>
-
-					<div class="about__icon-eye">
-						<div class="about__icon-eye-container">
-							<img class="about__icon-eyeball" src="img/eye.png" alt="" />
-							<img class="about__icon-iris" src="img/iris.png" alt="" class="iris" />
-						</div>
-					</div>
-
-					<div class="about__icon-man">
-						<div class="about__icon-man-container">
-							<img class="about__icon-tapMan" src="img/man.png" />
-							<div class="about__taps">
-								<img class="about__clockwise" src="img/tap.png" alt="tap" />
-								<img class="about__counterclockwise" src="img/tap.png" alt="tap" />
-							</div>
-							<img class="about__icon-star" src="img/icon-white-star.svg" alt="white start" />
-							<img class="about__icon-lightsLeft" src="img/icon-lights.svg" alt="lights" />
-							<img class="about__icon-lightsRight" src="img/icon-lights.svg" alt="lights" />
-						</div>
-					</div>
-
-					<div class="about__icon-waves d-none d-md-inline-block">
-						<img src="img/icon-waves.svg" alt="waves icon" />
-					</div>
-
-					<div class="about__icon-x2 d-none d-md-inline-block">
-						<img class="about__icon-blueX" src="img/icon-blue-x.svg" alt="blue x" />
-						<img class="about__icon-hexagon" src="img/icon-dots-hexagon.svg" alt="hexagon dots" />
-						<img class="about__icon-orangeX" src="img/icon-orange-x.svg" alt="orange x" />
-					</div>
-
-					<div class="about__linesInRound">
-						<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
-					</div>
-
-					<div class="about__icon-whiteX">
-						<img class="about__icon-firstX" src="img/icon-white-x.svg" alt="icon x white" />
-						<img class="about__icon-hexagonX" src="img/icon-dots-hexagon.svg" alt="hexahon white" />
-						<img class="about__icon-secondX" src="img/icon-white-x.svg" alt="icon x white" />
-					</div>
-
-					<div class="about__icons-microphone">
-						<img class="about__icons-microphone_leftLights" src="img/icon-lights.svg" alt="icon lights" />
-						<img class="about__icons-microphone_rightLights" src="img/icon-lights.svg" alt="icon lights" />
-						<img class="about__icons-microphone_star" src="img/icon-white-star.svg" alt="white star" />
-						<img class="about__icons-microphoneImg" src="img/mic.png" alt="" />
-					</div>
-
-					<div class="about__icon-round">
-						<img src="img/icon-round.svg" alt="round icon" />
-					</div>
-
-					<div class="about__icon-lines">
-						<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
-					</div>
-
-					<div class="about__icon-lines about__icon-lines_bottom">
-						<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
-					</div>
-
-					<div class="about__icon-lines about__icon-lines_bottom2">
-						<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
-					</div>
-
-					<div class="about__linesInRound about__linesInRound_bottom">
-						<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
-					</div>
-				</div>
-			</section>
-
-			<section class="stats">
-				<div class="container">
-					<div class="stats__heading" data-aos="fade-up">
-						<h2 class="stats__title-p1">We broke a record by</h2>
-						<h2 class="stats__title-p2">traveling faster than light</h2>
-					</div>
-					<div class="stats__digits" data-aos="slide-left">
-						<div class="row row-col-2 row-cols-md-3 g-5 stats__row mb-5">
-							<div class="col-6 stats__item">
-								<h3 class="stats__item-title text-uppercase">shows slayed</h3>
-								<p class="stats__item-digits">600+</p>
-							</div>
-							<div class="col-6 stats__item">
-								<h3 class="stats__item-title text-uppercase">colleges connected</h3>
-								<p class="stats__item-digits">300+</p>
-							</div>
-							<div class="col-6 stats__item">
-								<h3 class="stats__item-title text-uppercase">festivals fired up</h3>
-								<p class="stats__item-digits">390+</p>
-							</div>
-							<div class="col-6 stats__item">
-								<h3 class="stats__item-title text-uppercase">artists accessed</h3>
-								<p class="stats__item-digits">250+</p>
-							</div>
-							<div class="col-6 stats__item">
-								<h3 class="stats__item-title text-uppercase">cities conquered</h3>
-								<p class="stats__item-digits">150</p>
-							</div>
-							<div class="col-6 stats__item">
-								<h3 class="stats__item-title text-uppercase">fanatic footfalls</h3>
-								<p class="stats__item-digits">900,000</p>
+								<img class="about__icon-star" src="img/icon-white-star.svg" alt="white start" />
+								<img class="about__icon-lightsLeft" src="img/icon-lights.svg" alt="lights" />
+								<img class="about__icon-lightsRight" src="img/icon-lights.svg" alt="lights" />
 							</div>
 						</div>
-						<div class="stats__icon-nice" data-aos="fade-up-right">
-							<div class="stats__icon-container"><img src="img/icon-nice.svg" alt="nice" /></div>
+	
+						<div class="about__icon-waves d-none d-md-inline-block">
+							<img src="img/icon-waves.svg" alt="waves icon" />
+						</div>
+	
+						<div class="about__icon-x2 d-none d-md-inline-block">
+							<img class="about__icon-blueX" src="img/icon-blue-x.svg" alt="blue x" />
+							<img class="about__icon-hexagon" src="img/icon-dots-hexagon.svg" alt="hexagon dots" />
+							<img class="about__icon-orangeX" src="img/icon-orange-x.svg" alt="orange x" />
+						</div>
+	
+						<div class="about__linesInRound">
+							<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
+						</div>
+	
+						<div class="about__icon-whiteX">
+							<img class="about__icon-firstX" src="img/icon-white-x.svg" alt="icon x white" />
+							<img class="about__icon-hexagonX" src="img/icon-dots-hexagon.svg" alt="hexahon white" />
+							<img class="about__icon-secondX" src="img/icon-white-x.svg" alt="icon x white" />
+						</div>
+	
+						<div class="about__icons-microphone">
+							<img class="about__icons-microphone_leftLights" src="img/icon-lights.svg" alt="icon lights" />
+							<img class="about__icons-microphone_rightLights" src="img/icon-lights.svg" alt="icon lights" />
+							<img class="about__icons-microphone_star" src="img/icon-white-star.svg" alt="white star" />
+							<img class="about__icons-microphoneImg" src="img/mic.png" alt="" />
+						</div>
+	
+						<div class="about__icon-round">
+							<img src="img/icon-round.svg" alt="round icon" />
+						</div>
+	
+						<div class="about__icon-lines">
+							<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
+						</div>
+	
+						<div class="about__icon-lines about__icon-lines_bottom">
+							<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
+						</div>
+	
+						<div class="about__icon-lines about__icon-lines_bottom2">
+							<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
+						</div>
+	
+						<div class="about__linesInRound about__linesInRound_bottom">
+							<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
 						</div>
 					</div>
-					<div class="cube">
-						<div class="cube-container">
-							<div class="cube__side"></div>
-							<div class="cube__side"></div>
-							<div class="cube__side"></div>
-							<div class="cube__side"></div>
-							<div class="cube__side"></div>
-							<div class="cube__side"></div>
+				</section>
+	
+				<section class="stats">
+					<div class="container">
+						<div class="stats__heading" data-aos="fade-up">
+							<h2 class="stats__title-p1">We broke a record by</h2>
+							<h2 class="stats__title-p2">traveling faster than light</h2>
 						</div>
-					</div>
-					<div class="stats__icon-lines">
-						<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
-					</div>
-					<div class="stats__icon-star">
-						<img src="img/icon-blue-star.svg" alt="blue star" />
-					</div>
-					<div class="stats__icon-dots">
-						<img src="img/icon-dots-hexagon.svg" alt="hexagon dots" />
-					</div>
-					<div class="stats__icon-orangeStar">
-						<img src="img/icon-orange-star.svg" alt="orange star" />
-					</div>
-					<div class="stats__icon-round">
-						<img src="img/icon-round.svg" alt="round icon" />
-					</div>
-					<div class="stats__icon-round2">
-						<img src="img/icon-round.svg" alt="round icon" />
-					</div>
-					<div class="stats__icon-lines stats__icon-lines_2">
-						<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
-					</div>
-					<div class="stats__icon-linesInRound">
-						<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
-					</div>
-					<div class="stats__icon-x">
-						<img src="img/icon-white-x.svg" alt="icon x" />
-					</div>
-
-					<div class="adv-slider owl-carousel owl-rtl owl-loaded owl-drag">
-						<div class="owl-stage-outer">
-							<div class="owl-stage">
-								<div class="adv-slider__item owl-item">
-									<img src="img/adv-slider.webp" class="d-block w-100" alt="advertisement" />
+						<div class="stats__digits" data-aos="slide-left">
+							<div class="row row-col-2 row-cols-md-3 g-5 stats__row mb-5">
+								<div class="col-6 stats__item">
+									<h3 class="stats__item-title text-uppercase">shows slayed</h3>
+									<p class="stats__item-digits">600+</p>
 								</div>
-								<div class="adv-slider__item owl-item">
-									<img src="img/adv-slider.webp" class="d-block w-100" alt="advertisement" />
+								<div class="col-6 stats__item">
+									<h3 class="stats__item-title text-uppercase">colleges connected</h3>
+									<p class="stats__item-digits">300+</p>
 								</div>
-								<div class="adv-slider__item owl-item">
-									<img src="img/adv-slider.webp" class="d-block w-100" alt="advertisement" />
+								<div class="col-6 stats__item">
+									<h3 class="stats__item-title text-uppercase">festivals fired up</h3>
+									<p class="stats__item-digits">390+</p>
+								</div>
+								<div class="col-6 stats__item">
+									<h3 class="stats__item-title text-uppercase">artists accessed</h3>
+									<p class="stats__item-digits">250+</p>
+								</div>
+								<div class="col-6 stats__item">
+									<h3 class="stats__item-title text-uppercase">cities conquered</h3>
+									<p class="stats__item-digits">150</p>
+								</div>
+								<div class="col-6 stats__item">
+									<h3 class="stats__item-title text-uppercase">fanatic footfalls</h3>
+									<p class="stats__item-digits">900,000</p>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="team">
-				<div class="container">
-					<div class="team__img" data-aos="zoom-in">
-						<img src="img/team.webp" alt="" />
-						<div class="team__lead-text" data-aos="zoom-in">
-							<div class="team__lead-text-container">
-								<p class="team__lead-text-inner">Lead</p>
-								<p class="team__lead-text-inner">Your</p>
-								<p class="team__lead-text-inner">TrIbe</p>
+							<div class="stats__icon-nice" data-aos="fade-up-right">
+								<div class="stats__icon-container"><img src="img/icon-nice.svg" alt="nice" /></div>
 							</div>
 						</div>
-					</div>
-					<div class="team__text" data-aos="slide-up">
-						<p class="team__text-p1 text-uppercase">become a campus ambassador</p>
-						<p class="team__text-p2 text-uppercase">& wear the tribe c.a.p</p>
-						<a href="#" class="team__link about__link text-uppercase" data-aos="fade-up">know more</a>
-					</div>
-					<div class="team__icon-quiz d-lg-none">
-						<img class="team__icon-quiz1" src="img/qz.png" alt="quiz icon" />
-						<img class="team__icon-quiz2" src="img/qz.png" alt="quiz icon" />
-					</div>
-					<div class="team__icon-skate">
-						<img src="img/skateboard.png" alt="" />
-					</div>
-					<div class="team__icon-yellowStar">
-						<img src="img/icon-yellow-star.svg" alt="yellow star" />
-					</div>
-					<div class="team__icon-lines">
-						<img src="img/icon-white-diagonal-line.svg" alt="diagonal line" />
-					</div>
-					<div class="team__icon-lines team__icon-lines_2">
-						<img src="img/icon-white-diagonal-line.svg" alt="diagonal line" />
-					</div>
-					<div class="team__icon-linesInRound">
-						<img src="img/icon-white-lines-inRound.svg" alt="" />
-					</div>
-					<div class="team__icon-linesInRound team__icon-linesInRound_2">
-						<img src="img/icon-white-lines-inRound.svg" alt="" />
-					</div>
-					<div class="team__icon-x">
-						<img src="img/icon-white-x.svg" alt="icon x" />
-					</div>
-					<div class="team__icon-round">
-						<img src="img/icon-round.svg" alt="icon round" />
-					</div>
-					<div class="team__icon-girl">
-						<img class="team__girl" src="img/girl.png" alt="girl" />
-						<img class="team__lights-left" src="img/icon-yellow-lights.svg" alt="yellow lights" />
-						<img class="team__lights-right" src="img/icon-yellow-lights.svg" alt="yellow lights" />
-						<img class="team__star" src="img/icon-white-star.svg" alt="white star" />
-					</div>
-					<div class="team__icon-dots">
-						<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
-					</div>
-				</div>
-			</section>
-
-			<section class="events">
-				<div class="events__container">
-					<div class="events__icon-yes">
-						<div class="events__icon-container">
-							<img src="img/icon-yes.svg" alt="icon yes" />
+						<div class="cube">
+							<div class="cube-container">
+								<div class="cube__side"></div>
+								<div class="cube__side"></div>
+								<div class="cube__side"></div>
+								<div class="cube__side"></div>
+								<div class="cube__side"></div>
+								<div class="cube__side"></div>
+							</div>
 						</div>
-					</div>
-					<div class="events__text-box1" data-aos="fade-up">
-						<div><h2 class="events__title">Events</h2></div>
-						<p class="events__subtitle">Here’s What The Tribe Has Been Upto</p>
-					</div>
-
-					<div class="events__slider-container">
-						<div class="events__slider owl-carousel owl-rtl owl-loaded owl-drag">
+						<div class="stats__icon-lines">
+							<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
+						</div>
+						<div class="stats__icon-star">
+							<img src="img/icon-blue-star.svg" alt="blue star" />
+						</div>
+						<div class="stats__icon-dots">
+							<img src="img/icon-dots-hexagon.svg" alt="hexagon dots" />
+						</div>
+						<div class="stats__icon-orangeStar">
+							<img src="img/icon-orange-star.svg" alt="orange star" />
+						</div>
+						<div class="stats__icon-round">
+							<img src="img/icon-round.svg" alt="round icon" />
+						</div>
+						<div class="stats__icon-round2">
+							<img src="img/icon-round.svg" alt="round icon" />
+						</div>
+						<div class="stats__icon-lines stats__icon-lines_2">
+							<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
+						</div>
+						<div class="stats__icon-linesInRound">
+							<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
+						</div>
+						<div class="stats__icon-x">
+							<img src="img/icon-white-x.svg" alt="icon x" />
+						</div>
+	
+						<div class="adv-slider owl-carousel owl-rtl owl-loaded owl-drag">
 							<div class="owl-stage-outer">
 								<div class="owl-stage">
-									<div class="owl-item events__item">
-										<img src="img/event1.png" alt="" />
-										<p class="events__text">Sunburn Cam...</p>
+									<div class="adv-slider__item owl-item">
+										<img src="img/adv-slider.webp" class="d-block w-100" alt="advertisement" />
 									</div>
-									<div class="owl-item events__item">
-										<img src="img/event2.png" alt="" />
-										<p class="events__text">Sunburn Cam...</p>
+									<div class="adv-slider__item owl-item">
+										<img src="img/adv-slider.webp" class="d-block w-100" alt="advertisement" />
 									</div>
-									<div class="owl-item events__item">
-										<img src="img/event3.png" alt="" />
-										<p class="events__text">Sunburn Cam...</p>
-									</div>
-									<div class="owl-item events__item">
-										<img src="img/event1.png" alt="" />
-										<p class="events__text">Sunburn Cam...</p>
-									</div>
-									<div class="owl-item events__item">
-										<img src="img/event2.png" alt="" />
-										<p class="events__text">Sunburn Cam...</p>
-									</div>
-									<div class="owl-item events__item">
-										<img src="img/event3.png" alt="" />
-										<p class="events__text">Sunburn Cam...</p>
+									<div class="adv-slider__item owl-item">
+										<img src="img/adv-slider.webp" class="d-block w-100" alt="advertisement" />
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<a class="events__link" data-aos="fade-left" href="#" class="team__link about__link text-uppercase">All Events</a>
-				</div>
-			</section>
-
-			<section class="ever">
-				<div class="container">
-					<div class="ever__title text-uppercase">the ever-growing tribe</div>
-					<div class="ever__sliders-container">
-						<div id="singleArtistSlider" class="ever__leftSlider owl-carousel owl-loaded owl-drag">
-							<div class="owl-stage-outer">
-								<div class="owl-stage">
-									<div class="leftSlider__item owl-item">
-										<img class="leftSlider__avatarImg" src="img/slider1.webp" alt="artist" />
-										<img class="leftSlider__background" src="img/artists__slider.png" alt="card background" />
-										<div class="leftSlider__textBox">
-											<h3 class="leftSlider__title text-uppercase">did you know</h3>
-											<h3 class="leftSlider__artistName text-uppercase">akhil sachdeva</h3>
-											<p class="leftSlider__text">
-												Akhil Sachdeva won the Zee Cine Award gor Best Playback Singer for his Bollywood debut with 'Humsafar' form Badrinath Ki Dulhania.
-											</p>
+				</section>
+	
+				<section class="team">
+					<div class="container">
+						<div class="team__img" data-aos="zoom-in">
+							<img src="img/team.webp" alt="" />
+							<div class="team__lead-text" data-aos="zoom-in">
+								<div class="team__lead-text-container">
+									<p class="team__lead-text-inner">Lead</p>
+									<p class="team__lead-text-inner">Your</p>
+									<p class="team__lead-text-inner">TrIbe</p>
+								</div>
+							</div>
+						</div>
+						<div class="team__text" data-aos="slide-up">
+							<p class="team__text-p1 text-uppercase">become a campus ambassador</p>
+							<p class="team__text-p2 text-uppercase">& wear the tribe c.a.p</p>
+							<a href="#" class="team__link about__link text-uppercase" data-aos="fade-up">know more</a>
+						</div>
+						<div class="team__icon-quiz">
+							<img class="team__icon-quiz1" src="img/qz.png" alt="quiz icon" />
+							<img class="team__icon-quiz2" src="img/qz.png" alt="quiz icon" />
+						</div>
+						<div class="team__icon-skate">
+							<img src="img/skateboard.png" alt="" />
+						</div>
+						<div class="team__icon-yellowStar">
+							<img src="img/icon-yellow-star.svg" alt="yellow star" />
+						</div>
+						<div class="team__icon-lines">
+							<img src="img/icon-white-diagonal-line.svg" alt="diagonal line" />
+						</div>
+						<div class="team__icon-lines team__icon-lines_2">
+							<img src="img/icon-white-diagonal-line.svg" alt="diagonal line" />
+						</div>
+						<div class="team__icon-linesInRound">
+							<img src="img/icon-white-lines-inRound.svg" alt="" />
+						</div>
+						<div class="team__icon-linesInRound team__icon-linesInRound_2">
+							<img src="img/icon-white-lines-inRound.svg" alt="" />
+						</div>
+						<div class="team__icon-x">
+							<img src="img/icon-white-x.svg" alt="icon x" />
+						</div>
+						<div class="team__icon-round">
+							<img src="img/icon-round.svg" alt="icon round" />
+						</div>
+						<div class="team__icon-girl">
+							<img class="team__girl" src="img/girl.png" alt="girl" />
+							<img class="team__lights-left" src="img/icon-yellow-lights.svg" alt="yellow lights" />
+							<img class="team__lights-right" src="img/icon-yellow-lights.svg" alt="yellow lights" />
+							<img class="team__star" src="img/icon-white-star.svg" alt="white star" />
+						</div>
+						<div class="team__icon-dots">
+							<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
+						</div>
+					</div>
+				</section>
+	
+				<section class="events">
+					<div class="events__container">
+						<div class="events__icon-yes">
+							<div class="events__icon-container">
+								<img src="img/icon-yes.svg" alt="icon yes" />
+							</div>
+						</div>
+						<div class="events__text-box1" data-aos="fade-up">
+							<div><h2 class="events__title">Events</h2></div>
+							<p class="events__subtitle">Here’s What The Tribe Has Been Upto</p>
+						</div>
+	
+						<div class="events__slider-container">
+							<div class="events__slider owl-carousel owl-rtl owl-loaded owl-drag">
+								<div class="owl-stage-outer">
+									<div class="owl-stage">
+										<div class="owl-item events__item">
+											<img src="img/event1.png" alt="" />
+											<p class="events__text">Sunburn Cam...</p>
 										</div>
-									</div>
-									<div class="leftSlider__item owl-item">
-										<div class="leftSlider__avatar">
-											<img class="leftSlider__avatarImg" src="img/slider1.webp" alt="artist" />
+										<div class="owl-item events__item">
+											<img src="img/event2.png" alt="" />
+											<p class="events__text">Sunburn Cam...</p>
 										</div>
-										<img class="leftSlider__background" src="img/artists__slider.png" alt="card background" />
-										<div class="leftSlider__textBox">
-											<h3 class="leftSlider__title text-uppercase">did you know</h3>
-											<h3 class="leftSlider__artistName text-uppercase">akhil sachdeva</h3>
-											<p class="leftSlider__text">
-												Akhil Sachdeva won the Zee Cine Award gor Best Playback Singer for his Bollywood debut with 'Humsafar' form Badrinath Ki Dulhania.
-											</p>
+										<div class="owl-item events__item">
+											<img src="img/event3.png" alt="" />
+											<p class="events__text">Sunburn Cam...</p>
 										</div>
-									</div>
-									<div class="leftSlider__item owl-item">
-										<div class="leftSlider__avatar">
-											<img class="leftSlider__avatarImg" src="img/slider1.webp" alt="artist" />
+										<div class="owl-item events__item">
+											<img src="img/event1.png" alt="" />
+											<p class="events__text">Sunburn Cam...</p>
 										</div>
-										<img class="leftSlider__background" src="img/artists__slider.png" alt="card background" />
-										<div class="leftSlider__textBox">
-											<h3 class="leftSlider__title text-uppercase">did you know</h3>
-											<h3 class="leftSlider__artistName text-uppercase">akhil sachdeva</h3>
-											<p class="leftSlider__text">
-												Akhil Sachdeva won the Zee Cine Award gor Best Playback Singer for his Bollywood debut with 'Humsafar' form Badrinath Ki Dulhania.
-											</p>
+										<div class="owl-item events__item">
+											<img src="img/event2.png" alt="" />
+											<p class="events__text">Sunburn Cam...</p>
+										</div>
+										<div class="owl-item events__item">
+											<img src="img/event3.png" alt="" />
+											<p class="events__text">Sunburn Cam...</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="ever__rightSlider owl-carousel owl-loaded owl-drag">
-							<div class="owl-stage-outer">
-								<div class="owl-stage">
-									<div class="rightSlider__item owl-item">
-										<div class="rightSlider__image-container">
-											<img src="img/slider1.webp" alt="artist" />
-											<div class="rightSlider__yellowRound"></div>
+	
+						<a class="events__link" data-aos="fade-left" href="#" class="team__link about__link text-uppercase">All Events</a>
+					</div>
+				</section>
+	
+				<section class="ever">
+					<div class="container">
+						<div class="ever__title text-uppercase">the ever-growing tribe</div>
+						<div class="ever__sliders-container">
+							<div id="singleArtistSlider" class="ever__leftSlider owl-carousel owl-loaded owl-drag">
+								<div class="owl-stage-outer">
+									<div class="owl-stage">
+
+										<div class="leftSlider__item owl-item">
+											<div class="leftSlider__item-inner">
+												<div class="leftSlider__avatar">
+													<img class="leftSlider__avatarImg" src="img/slider1.webp" alt="artist" />
+												</div>
+												<img class="leftSlider__background" src="img/artists__slider.png" alt="card background" />
+												<div class="leftSlider__textBox">
+													<h3 class="leftSlider__title text-uppercase">did you know</h3>
+													<h3 class="leftSlider__artistName text-uppercase">akhil sachdeva</h3>
+													<p class="leftSlider__text">
+														Akhil Sachdeva won the Zee Cine Award gor Best Playback Singer for his Bollywood debut with 'Humsafar' form Badrinath Ki Dulhania.
+													</p>
+											</div>
+											</div>
 										</div>
-										<p class="rightSlider__artistName text-uppercase">akhil sachdeva</p>
+										<div class="leftSlider__item owl-item">
+											<div class="leftSlider__item-inner">
+												<div class="leftSlider__avatar">
+													<img class="leftSlider__avatarImg" src="img/slider1.webp" alt="artist" />
+												</div>
+												<img class="leftSlider__background" src="img/artists__slider.png" alt="card background" />
+												<div class="leftSlider__textBox">
+													<h3 class="leftSlider__title text-uppercase">did you know</h3>
+													<h3 class="leftSlider__artistName text-uppercase">akhil sachdeva</h3>
+													<p class="leftSlider__text">
+														Akhil Sachdeva won the Zee Cine Award gor Best Playback Singer for his Bollywood debut with 'Humsafar' form Badrinath Ki Dulhania.
+													</p>
+											</div>
+											</div>
+										</div>
+										<div class="leftSlider__item owl-item">
+											<div class="leftSlider__item-inner">
+												<div class="leftSlider__avatar">
+													<img class="leftSlider__avatarImg" src="img/slider1.webp" alt="artist" />
+												</div>
+												<img class="leftSlider__background" src="img/artists__slider.png" alt="card background" />
+												<div class="leftSlider__textBox">
+													<h3 class="leftSlider__title text-uppercase">did you know</h3>
+													<h3 class="leftSlider__artistName text-uppercase">akhil sachdeva</h3>
+													<p class="leftSlider__text">
+														Akhil Sachdeva won the Zee Cine Award gor Best Playback Singer for his Bollywood debut with 'Humsafar' form Badrinath Ki Dulhania.
+													</p>
+											</div>
+											</div>
+										</div>
+
 									</div>
-									<div class="rightSlider__item owl-item">
-										<div class="rightSlider__image-container">
-											<img src="img/slider2.webp" alt="artist" />
-											<div class="rightSlider__yellowRound"></div>
+								</div>
+							</div>
+							<div class="ever__rightSlider owl-carousel owl-loaded owl-drag">
+								<div class="owl-stage-outer">
+									<div class="owl-stage">
+										<div class="rightSlider__item owl-item">
+											<div class="rightSlider__image-container">
+												<img src="img/slider1.webp" alt="artist" />
+												<div class="rightSlider__yellowRound"></div>
+											</div>
+											<p class="rightSlider__artistName text-uppercase">akhil sachdeva</p>
 										</div>
-										<p class="rightSlider__artistName text-uppercase">darshan ravai</p>
-									</div>
-									<div class="rightSlider__item owl-item">
-										<div class="rightSlider__image-container">
-											<img src="img/slider3.webp" alt="artist" />
-											<div class="rightSlider__yellowRound"></div>
+										<div class="rightSlider__item owl-item">
+											<div class="rightSlider__image-container">
+												<img src="img/slider2.webp" alt="artist" />
+												<div class="rightSlider__yellowRound"></div>
+											</div>
+											<p class="rightSlider__artistName text-uppercase">darshan ravai</p>
 										</div>
-										<p class="rightSlider__artistName text-uppercase">diljit dosanjh</p>
-									</div>
-									<div class="rightSlider__item owl-item">
-										<div class="rightSlider__image-container">
-											<img src="img/slider4.webp" alt="artist" />
-											<div class="rightSlider__yellowRound"></div>
+										<div class="rightSlider__item owl-item">
+											<div class="rightSlider__image-container">
+												<img src="img/slider3.webp" alt="artist" />
+												<div class="rightSlider__yellowRound"></div>
+											</div>
+											<p class="rightSlider__artistName text-uppercase">diljit dosanjh</p>
 										</div>
-										<p class="rightSlider__artistName text-uppercase">salim sulaiman</p>
-									</div>
-									<div class="rightSlider__item owl-item">
-										<div class="rightSlider__image-container">
-											<img src="img/slider5.webp" alt="artist" />
-											<div class="rightSlider__yellowRound"></div>
+										<div class="rightSlider__item owl-item">
+											<div class="rightSlider__image-container">
+												<img src="img/slider4.webp" alt="artist" />
+												<div class="rightSlider__yellowRound"></div>
+											</div>
+											<p class="rightSlider__artistName text-uppercase">salim sulaiman</p>
 										</div>
-										<p class="rightSlider__artistName text-uppercase">shankar ehsaan loy</p>
-									</div>
-									<div class="rightSlider__item owl-item">
-										<div class="rightSlider__image-container">
-											<img src="img/slider5.webp" alt="artist" />
-											<div class="rightSlider__yellowRound"></div>
+										<div class="rightSlider__item owl-item">
+											<div class="rightSlider__image-container">
+												<img src="img/slider5.webp" alt="artist" />
+												<div class="rightSlider__yellowRound"></div>
+											</div>
+											<p class="rightSlider__artistName text-uppercase">shankar ehsaan loy</p>
 										</div>
-										<p class="rightSlider__artistName text-uppercase">vishal</p>
+										<div class="rightSlider__item owl-item">
+											<div class="rightSlider__image-container">
+												<img src="img/slider5.webp" alt="artist" />
+												<div class="rightSlider__yellowRound"></div>
+											</div>
+											<p class="rightSlider__artistName text-uppercase">vishal</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="ever__icon-linesInRound">
+							<img src="img/icon-black-lines-inRound.svg" alt="icon lines in round" />
+						</div>
+						<div class="ever__icon-dottedHexagon">
+							<img src="img/icon-dots-hexagon.svg" alt="dotted hexagon" />
+						</div>
+						<div class="ever__icon-diagonalLine">
+							<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
+						</div>
+						<div class="ever__icon-diagonalLine ever__icon-diagonalLine_2">
+							<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
+						</div>
+						<div class="ever__icon-dottedCube">
+							<img src="img/icon-yellow-dotted-cube.svg" alt="dotted cube" />
+						</div>
+						<div class="ever__icon-round">
+							<img src="img/icon-round.svg" alt="round" />
+						</div>
+						<div class="ever__icon-x">
+							<img src="img/icon-white-x.svg" alt="icon x" />
+						</div>
+						<div class="ever__icon-guitarMan">
+							<img class="ever__icon-lightsLeft" src="img/icon-lights.svg" alt="lights" />
+							<img class="ever__icon-lightsRight" src="img/icon-lights.svg" alt="lights" />
+							<img class="ever__icon-star" src="img/icon-white-star.svg" alt="star" />
+							<img class="ever__icon-man" src="img/man2.png" alt="guitarMan" />
+						</div>
 					</div>
-					<div class="ever__icon-linesInRound">
-						<img src="img/icon-black-lines-inRound.svg" alt="icon lines in round" />
+				</section>
+	
+				<section class="footer">
+					<div class="container">
+						<div class="footer__text-box">
+							<h2 class="footer__title">Follow the Tribe</h2>
+						</div>
+	
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="https://twitter.com/TribeVibeLive" target="blank">
+									<img src="img/icon-twitter.svg" alt="tweeter icon" />
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="https://www.instagram.com/tribevibe.live/" target="blank">
+									<img src="img/icon-instagram.svg" alt="instagram icon" />
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="https://www.facebook.com/tribevibelive" target="blank">
+									<img src="img/icon-facebook.svg" alt="facebook icon" />
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="https://www.linkedin.com/company/tribevibe-entertainment-pvt-ltd/" target="blank">
+									<img src="img/icon-linkedin.svg" alt="linkedin icon" />
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="https://www.youtube.com/channel/UC27UBqDUeKD4RFtyvYAkLnA/videos" target="blank">
+									<img src="img/icon-youtube.svg" alt="youtube icon" />
+								</a>
+							</li>
+						</ul>
+						<div class="footer__icon-dottedCub">
+							<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
+						</div>
+						<div class="footer__icon-dottedCub">
+							<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
+						</div>
+						<div class="footer__icon-dottedCub footer__icon-dottedCub_horizontal">
+							<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
+						</div>
+						<div class="footer__icon-dottedCub footer__icon-dottedCub_horizontal-2">
+							<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
+						</div>
+						<div class="footer__icon-linesInRound">
+							<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
+						</div>
 					</div>
-					<div class="ever__icon-dottedHexagon">
-						<img src="img/icon-dots-hexagon.svg" alt="dotted hexagon" />
-					</div>
-					<div class="ever__icon-diagonalLine">
-						<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
-					</div>
-					<div class="ever__icon-diagonalLine ever__icon-diagonalLine_2">
-						<img src="img/icon-diagonal-lines.svg" alt="diagonal lines" />
-					</div>
-					<div class="ever__icon-dottedCube">
-						<img src="img/icon-yellow-dotted-cube.svg" alt="dotted cube" />
-					</div>
-					<div class="ever__icon-round">
-						<img src="img/icon-round.svg" alt="round" />
-					</div>
-					<div class="ever__icon-x">
-						<img src="img/icon-white-x.svg" alt="icon x" />
-					</div>
-					<div class="ever__icon-guitarMan">
-						<img class="ever__icon-lightsLeft" src="img/icon-lights.svg" alt="lights" />
-						<img class="ever__icon-lightsRight" src="img/icon-lights.svg" alt="lights" />
-						<img class="ever__icon-star" src="img/icon-white-star.svg" alt="star" />
-						<img class="ever__icon-man" src="img/man2.png" alt="guitarMan" />
-					</div>
-				</div>
-			</section>
-
-			<section class="footer">
-				<div class="container">
-					<div class="footer__text-box">
-						<h2 class="footer__title">Follow the Tribe</h2>
-					</div>
-
-					<ul class="footer__list">
-						<li class="footer__item">
-							<a class="footer__link" href="https://twitter.com/TribeVibeLive" target="blank">
-								<img src="img/icon-twitter.svg" alt="tweeter icon" />
-							</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="https://www.instagram.com/tribevibe.live/" target="blank">
-								<img src="img/icon-instagram.svg" alt="instagram icon" />
-							</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="https://www.facebook.com/tribevibelive" target="blank">
-								<img src="img/icon-facebook.svg" alt="facebook icon" />
-							</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="https://www.linkedin.com/company/tribevibe-entertainment-pvt-ltd/" target="blank">
-								<img src="img/icon-linkedin.svg" alt="linkedin icon" />
-							</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="https://www.youtube.com/channel/UC27UBqDUeKD4RFtyvYAkLnA/videos" target="blank">
-								<img src="img/icon-youtube.svg" alt="youtube icon" />
-							</a>
-						</li>
-					</ul>
-					<div class="footer__icon-dottedCub">
-						<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
-					</div>
-					<div class="footer__icon-dottedCub">
-						<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
-					</div>
-					<div class="footer__icon-dottedCub footer__icon-dottedCub_horizontal">
-						<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
-					</div>
-					<div class="footer__icon-dottedCub footer__icon-dottedCub_horizontal-2">
-						<img src="img/icon-black-dotted-cube.svg" alt="dotted cube" />
-					</div>
-					<div class="footer__icon-linesInRound">
-						<img src="img/icon-black-lines-inRound.svg" alt="lines in round" />
-					</div>
-				</div>
-			</section>
-		</main>
+				</section>
+			</main>
+	</div>
 
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
