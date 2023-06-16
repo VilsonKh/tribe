@@ -27,6 +27,12 @@
     @media screen and (max-width: 555px) {
       right: 5%;
     }
+
+		@media screen and (max-width: 405px) {
+			right: 1%;
+			margin: 0 auto;
+		
+		}
 	}
 
 	&__sliders-container {
@@ -60,10 +66,6 @@
 		position: relative;
     min-width: 280px;
 		height: 350px;
-	}
-
-	&__item-inner {
-		
 	}
 
 	&__textBox {

@@ -435,7 +435,8 @@ img, svg {
     position: relative;
     max-width: 1296px;
     margin: 0 auto;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding: 10px; }
   .events__text-box1 {
     text-align: center;
     position: relative;
@@ -1238,6 +1239,10 @@ img, svg {
     @media screen and (max-width: 555px) {
       .ever__title {
         right: 5%; } }
+    @media screen and (max-width: 405px) {
+      .ever__title {
+        right: 1%;
+        margin: 0 auto; } }
   .ever__sliders-container {
     display: flex;
     justify-content: space-around; }
@@ -1424,6 +1429,9 @@ img, svg {
     z-index: 999;
     left: -5%;
     top: 150px; }
+    @media screen and (max-width: 600px) {
+      .about__text-outer {
+        left: 0; } }
   .about__text-container {
     background-color: white;
     outline: 1px solid black;
