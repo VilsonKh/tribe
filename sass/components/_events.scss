@@ -7,8 +7,16 @@
 	padding-bottom: 50px;
 	padding-top: 100px;
 
-	& .container {
+
+	// & .container {
+	// 	position: relative;
+	// }
+
+	&__container {
 		position: relative;
+		max-width: 1296px;
+		margin: 0 auto;
+		overflow-x: hidden;
 	}
 
 	&__text-box1 {
@@ -53,6 +61,8 @@
 
 	&__slider-container {
 		margin-bottom: 50px;
+		position: relative;
+		z-index: 1;
 	}
 
   &__slider {
@@ -88,8 +98,8 @@
 	}
 
 	& .owl-nav {
-		position: absolute;
-
+		// position: absolute;
+		z-index: -1;
 		top: 50%;
 		transform: translateY(-50%);
 	}

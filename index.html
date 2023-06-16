@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Tribe</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 		<link
@@ -14,9 +14,10 @@
 			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
 			crossorigin="anonymous"
 		/>
+
 		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
 		<link rel="stylesheet" href="owlcarousel/owl.theme.default.css" />
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
@@ -116,7 +117,7 @@
 							<div class="carousel-item slider__item">
 								<img src="img/slider__img.webp" class="d-block w-100" alt="" />
 								<div class="carousel-caption slider__caption-container" data-aos="fade-up">
-									<p class="slider__caption">Lorem ipsum	dolor sit amet</p>
+									<p class="slider__caption">Lorem ipsum dolor sit amet</p>
 								</div>
 							</div>
 						</div>
@@ -397,50 +398,52 @@
 			</section>
 
 			<section class="events">
-				<div class="events__icon-yes">
-					<div class="events__icon-container">
-						<img src="img/icon-yes.svg" alt="icon yes" />
+				<div class="events__container">
+					<div class="events__icon-yes">
+						<div class="events__icon-container">
+							<img src="img/icon-yes.svg" alt="icon yes" />
+						</div>
 					</div>
-				</div>
-				<div class="events__text-box1" data-aos="fade-up">
-					<div><h2 class="events__title">Events</h2></div>
-					<p class="events__subtitle">Here’s What The Tribe Has Been Upto</p>
-				</div>
+					<div class="events__text-box1" data-aos="fade-up">
+						<div><h2 class="events__title">Events</h2></div>
+						<p class="events__subtitle">Here’s What The Tribe Has Been Upto</p>
+					</div>
 
-				<div class="events__slider-container">
-					<div class="events__slider owl-carousel owl-rtl owl-loaded owl-drag">
-						<div class="owl-stage-outer">
-							<div class="owl-stage">
-								<div class="owl-item events__item">
-									<img src="img/event1.png" alt="" />
-									<p class="events__text">Sunburn Cam...</p>
-								</div>
-								<div class="owl-item events__item">
-									<img src="img/event2.png" alt="" />
-									<p class="events__text">Sunburn Cam...</p>
-								</div>
-								<div class="owl-item events__item">
-									<img src="img/event3.png" alt="" />
-									<p class="events__text">Sunburn Cam...</p>
-								</div>
-								<div class="owl-item events__item">
-									<img src="img/event1.png" alt="" />
-									<p class="events__text">Sunburn Cam...</p>
-								</div>
-								<div class="owl-item events__item">
-									<img src="img/event2.png" alt="" />
-									<p class="events__text">Sunburn Cam...</p>
-								</div>
-								<div class="owl-item events__item">
-									<img src="img/event3.png" alt="" />
-									<p class="events__text">Sunburn Cam...</p>
+					<div class="events__slider-container">
+						<div class="events__slider owl-carousel owl-rtl owl-loaded owl-drag">
+							<div class="owl-stage-outer">
+								<div class="owl-stage">
+									<div class="owl-item events__item">
+										<img src="img/event1.png" alt="" />
+										<p class="events__text">Sunburn Cam...</p>
+									</div>
+									<div class="owl-item events__item">
+										<img src="img/event2.png" alt="" />
+										<p class="events__text">Sunburn Cam...</p>
+									</div>
+									<div class="owl-item events__item">
+										<img src="img/event3.png" alt="" />
+										<p class="events__text">Sunburn Cam...</p>
+									</div>
+									<div class="owl-item events__item">
+										<img src="img/event1.png" alt="" />
+										<p class="events__text">Sunburn Cam...</p>
+									</div>
+									<div class="owl-item events__item">
+										<img src="img/event2.png" alt="" />
+										<p class="events__text">Sunburn Cam...</p>
+									</div>
+									<div class="owl-item events__item">
+										<img src="img/event3.png" alt="" />
+										<p class="events__text">Sunburn Cam...</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<a class="events__link" data-aos="fade-left" href="#" class="team__link about__link text-uppercase">All Events</a>
+					<a class="events__link" data-aos="fade-left" href="#" class="team__link about__link text-uppercase">All Events</a>
+				</div>
 			</section>
 
 			<section class="ever">
@@ -632,6 +635,7 @@
 		<script type="module" src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script type="module" src="owlcarousel/owl.carousel.min.js"></script>
 		<script type="module" src="js/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 		<script type="module" src="js/main.js"></script>
 	</body>
 </html>
