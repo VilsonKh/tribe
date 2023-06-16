@@ -1,135 +1,96 @@
 .team {
-   background-color: black;
-   background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
-   background-size: 70px 70px, 70px 70px;
-   overflow-x: hidden !important;
-   z-index: 1;
-   position: relative;
-   padding-bottom: 300px;
-   height: 100%;
+	background-color: black;
+	background-image: linear-gradient(rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.22) 69px, rgba(255, 255, 255, 0.23) 70px),
+		linear-gradient(90deg, rgba(255, 255, 255, 0) 69px, rgba(255, 255, 255, 0.05) 69px, rgba(255, 255, 255, 0.21) 70px);
+	background-size: 70px 70px, 70px 70px;
+	z-index: 1;
+	position: relative;
+	padding-bottom: 300px;
+	padding-top: 400px;
+	height: 100%;
 
-   & .container {
-      position: relative;
-   }
+	@media screen and (max-width: 1200px) {
+		padding-bottom: 200px;
+	}
 
-   &__img {
-      padding: 50px 20px 20px 20px;
-      background-color: white;
-      border: 2px solid black;
-      box-shadow: #485d74bf -8px 8px;
-      position: relative;
-      z-index: 10;
-      
-      & img {
-         border: 2px solid black;
-      }
-      @media screen and (min-width:1000px) {
-        width: 85%;
-        margin-left: auto;
-      }
-   }
+	& .container {
+		position: relative;
+	}
 
-   &__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      margin-top: 25px;
-      margin-bottom: 15px;
-      position: absolute;
-      z-index: 10;
-      left: 10%;
-      top: 150px;
-      transform: translateX(-50%);
-      width: 100%;
+	&__img {
+		padding: 50px 20px 20px 20px;
+		background-color: white;
+		border: 2px solid black;
+		box-shadow: #485d74bf -8px 8px;
+		position: relative;
+		z-index: 10;
 
-      @media screen and (min-width: 700px) {
-        top:440px;
-      }
+		& img {
+			border: 2px solid black;
+		}
+		@media screen and (min-width: 1000px) {
+			width: 85%;
+			margin-left: auto;
+		}
 
-      @media (min-width:1440px){
-        width: 50%;
-        top: 50%;
-        z-index: 999;
-      }
+		@media screen and (min-width: 1000px) {
+			width: 50%;
+		}
+	}
 
-      &-p1 {
-         display: block;
-         background-color: white;
-         border: 1px solid black;
-         padding: 5px;
-         box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
-         letter-spacing: -1px;
-         position: relative;
-         right: 5%;
-         width: 100% !important;
-      }
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		margin-top: 25px;
+		margin-bottom: 15px;
+		position: absolute;
+		width: 50%;
+		z-index: 10;
+		left: 20%;
+		top: 30%;
 
-      &-p2 {
-         display: inline-block;
-         background-color: white;
-         border: 1px solid black;
-         padding: 5px 30px;
-         width: 90%;
-         text-align: center;
-         margin-bottom: 20px;
-      }
-   }
+		@media screen and (max-width: 1200px) {
+			width: 65%;
+			left: 10%;
+		}
 
-   &__link {
-      display: block;
-      color: white !important;
+		@media screen and (max-width: 1000px) {
+			right: 0;
+			top: 100%;
+		}
+
+		&-p1 {
+			display: block;
+			background-color: white;
+			border: 1px solid black;
+			padding: 5px;
+			box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
+
+			position: relative;
+			right: 5%;
+			width: 100% !important;
+		}
+
+		&-p2 {
+			display: inline-block;
+			background-color: white;
+			border: 1px solid black;
+			padding: 5px 30px;
+			width: 90%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__link {
+		display: block;
+		color: white !important;
       margin: 0 auto;
-      text-align: center;
-      font-size: 20px;
-
-   }
+		text-align: center;
+		font-size: 20px;
+	}
 }
 
-.team__icons {
-   position: relative;
-   z-index: 999;
-   height: 100px;
-}
 
-.team-lines {
-   width: 200px;
-   transform: scale(1, -1);
-   position: absolute;
-   left: 30%;
-   top: -250px;
-   z-index: 1;
 
-   @media (min-width:1440px){
-    top: 0;
-  }
-}
-
-.team-qz {
-  position: absolute;
-  top: 150px;
-  z-index: 1;
-}
-
-.qz-1 {
-  width: 70px;
-  position: relative;
-  z-index: 2;
-}
-
-.qz-2 {
-  width: 100px;
-  opacity: .3;
-  position: relative;
-  left: -70px;
-  transform: rotate(-15deg);
-  z-index: 1;
-}
-
-.team-skate {
-  width: 100px;
-  position: absolute;
-  top: 250px;
-  right: 10%;
-  z-index: 3;
-}

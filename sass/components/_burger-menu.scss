@@ -1,4 +1,14 @@
 .burger-menu {
-  background-color: black;
+	background-color: black;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+  width: 100%;
+  z-index: 1000;
+  transition: all .3s linear;
 
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
 }

@@ -1,77 +1,255 @@
 .header {
+	&__item {
+		font-size: 16px;
+		color: white;
 
-  &__item {
-    font-size: 16px;
+		& a {
+			transition: all 0.3s linear;
+		}
 
-    & a {
-      color: white;
+		&.active {
+			color: $color-yellow;
+		}
 
-      &:hover,
-      &:active,
-      &:focus {
-        color: $color-yellow;
-      }
-    }
-  }
+		& a {
+			&:hover,
+			&:active,
+			&:focus {
+				color: $color-yellow;
+			}
+		}
+	}
 
-  &__login {
-    color: $color-yellow;
-  }
+	&__login {
+		color: $color-yellow !important;
+	}
+}
+
+.burger-menu {
+	font-size: 12px;
+	font-family: "dinbd";
 }
 
 .slider {
-  color: white;
+	color: white;
 
-  &__caption {
-    font-size: 40px;
-    color: black;
-    text-transform: uppercase;
-  }
+	&__caption {
+		color: black;
+		text-transform: uppercase;
+		font-family: "troublefont";
+		font-size: 83px;
+		line-height: 1.1;
+
+		@media screen and (max-width: 1200px) {
+			font-size: 63px;
+		}
+
+		@media screen and (max-width: 1000px) {
+			font-size: 43px;
+		}
+	}
 }
 
-.stats__item-digits {
-  display: inline;
-  color: #f47920;
-  font-size: 40px;
-  margin: 0 auto;
+.about {
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
 
+	&__text {
+		font-family: "dinbd";
+		color: #8d8d8d;
+		font-size: 18px;
+	}
+
+	&__link {
+		font-family: "troublefont";
+		color: black;
+		margin-left: 10%;
+		position: relative;
+		letter-spacing: 2px;
+		display: inline-block;
+		font-size: 25px;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 50px;
+			height: 2px;
+			position: absolute;
+			top: -10px;
+		}
+	}
+}
+
+.stats {
+	&__item-digits {
+		color: #f47920;
+
+		text-align: left;
+		font-family: "dinbd";
+		font-size: 56px;
+
+		@media screen and (max-width: 1000px) {
+			font-size: 40px;
+		}
+	}
+
+	&__heading {
+		font-family: "troublefont";
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+
+	&__item-title {
+		font-family: "dinbd";
+		font-size: 27px;
+		line-height: 25px;
+		text-align: left;
+
+		@media screen and (max-width: 768px) {
+			font-size: 22px;
+		}
+	}
 }
 
 .team {
-font-size: 30px;
-font-weight: 700;
-color: black;
-  text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	color: black;
+	text-align: center;
+
+	&__text-p1,
+	&__text-p2 {
+		font-family: "troublefont";
+		font-size: 48px;
+		letter-spacing: 2px;
+		font-weight: 700;
+
+		@media screen and (max-width: 1200px) {
+			font-size: 38px;
+		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 25px;
+		}
+	}
+
+	&__lead-text-inner {
+		font-family: "troublefont";
+		font-size: 44px;
+		letter-spacing: 1px;
+		line-height: 1;
+		font-weight: 700;
+		text-shadow: -6px 3px 0 #484141, -10px 11px 0 #00000038;
+		color: white;
+	}
 }
 
-.events__text {
-  text-align: right;
-    color: #fff;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 20px;
+.events {
+	&__text {
+		text-align: right;
+		color: #fff;
+		margin: 10px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	&__title {
+		font-family: "troublefont";
+		font-size: 48px;
+		letter-spacing: 2px;
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		font-family: "dinbd";
+		font-size: 24px;
+	}
+
+	&__link {
+		font-size: 25px;
+		letter-spacing: 2px;
+		text-align: center;
+		font-family: "troublefont";
+		text-decoration: underline;
+	}
+}
+
+.ever {
+	&__title {
+		font-family: "troublefont";
+		font-size: 48px;
+		letter-spacing: 2px;
+		font-weight: 700;
+
+		@media screen and (max-width: 768px) {
+			font-size: 35px;
+		}
+	}
+}
+
+.leftSlider {
+	&__item {
+	}
+	&__title {
+		font-family: "troublefont";
+		font-size: 25px;
+		font-weight: 700;
+		color: #f47920;
+	}
+
+	&__artistName {
+		font-family: "dinbd";
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__text {
+		font-size: 15px;
+		color: #8d8d8d;
+	}
+}
+
+.rightSlider {
+	&__artistName {
+		font-size: 34px;
+		font-family: "dinbd";
+		text-align: center;
+		color: white;
+	}
 }
 
 .artists__slider {
+	&-title {
+		color: #f47920;
+		font-size: 25px;
+	}
 
-  &-title {
-    color: #f47920;
-    font-size: 25px;
-  }
-
-  &-name {
-    text-transform: uppercase;
-  }
+	&-name {
+		text-transform: uppercase;
+	}
 }
 
-.events__text-box2 {
-  text-align: center;
+.events {
+	&__text-box2 {
+		text-align: center;
+	}
+
+	&__title-2 {
+		display: inline-block;
+		background-color: white;
+		padding: 5px 10px;
+		border: 1px solid black;
+		box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
+	}
 }
 
-.events__title-2 {
-  display: inline-block;
-  background-color: white;
-  padding: 5px 10px;
-  border: 1px solid black;
-  box-shadow: #fff -13px -13px 0 0, #000 -14px -14px 0 0, #000 -12px -12px 0 0, #000 -12px -14px 0 0, #000 -14px -12px 0 0;
+.footer__title {
+	font-family: "troublefont";
+	font-size: 48px;
+	letter-spacing: 2px;
+	font-weight: 700;
 }

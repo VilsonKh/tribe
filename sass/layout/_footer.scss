@@ -1,0 +1,64 @@
+.footer {
+  background-color: $color-yellow;
+  background-image: linear-gradient(rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.13) 69px, rgba(0, 0, 0, 0.05) 70px), linear-gradient(90deg, rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
+  background-size: 70px 70px, 70px 70px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  &__text-box {
+    text-align: center;
+    margin-bottom: 50px;
+    
+  }
+
+  &__title {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 30px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__list {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__link{
+    display: block;
+    width: 100%;
+  }
+
+  &__link img{
+    width: 126px;
+    height: 102px;
+    
+    border: 1px solid black;
+  }
+
+  &__item {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px 10px 10px 10px;
+    background-color: white;
+    text-align: center;
+
+      & svg {
+        width: 80%;
+        border: 1px solid black;
+        padding: 5px;
+
+      }
+    
+  }
+}
+

@@ -1,150 +1,838 @@
-.icons__x {
-  position: relative;
+// SLIDER ICONS
+
+.slider {
+
+	&__icon-yellowWow {
+		border: 1px solid black;
+		background: white;
+		padding: 20px 7px 7px;
+		display: inline-block;
+		position: absolute;
+		top: 90%;
+		right: 10%;
+		z-index: 1;
+	
+		&-container {
+			width: 100%;
+			background: black;
+			width: 160px;
+			height: 160px;
+	
+			@media screen and (max-width: 768px) {
+				width: 100px;
+				height: 100px;
+			}
+	
+			& img {
+				width: 80px;
+				margin: 0 auto;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+
+	&__icon-round {
+		width: 270px;
+		position: absolute;
+		top: 0%;
+		left: 10%;
+	}
+
+	&__icon-dotsCube {
+		position: absolute;
+		bottom: 0;
+		left: 10%;
+	}
 }
 
-.x-first {
-  width: 10%;
-  position: relative;
-  z-index: 1;
+// ABOUT ICONS
+
+.about {
+
+	&__icon-man {
+		position: absolute;
+		width: 270px;
+		bottom: 120%;
+		right: 25%;
+		z-index: 3;
+
+	
+		@media screen and (max-width: 768px) {
+			right: 10%;
+			bottom: 110%;
+		}
+
+		&-container {
+			position: relative;
+		}
+	}
+
+	&__icon-tapMan {
+		position: absolute;
+		top: 0;
+		z-index: 4;
+	}
+
+	&__taps {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		top: 15px;
+		left: 31%;
+		width: 100px;
+		z-index: 5;
+
+		& img {
+			width: 44px;
+		}
+	}
+	
+	&__clockwise {
+		animation: clockwise 4s linear infinite;
+	}
+
+	&__counterclockwise {
+		transform: rotate(25deg);
+		animation: clockwise 4s linear infinite reverse;
+	}
+
+	&__icon-round {
+		width: 130px;
+		position: absolute;
+		bottom: 104%;
+		right: 50%;
+		z-index: 1;
+	}
+
+	&__icon-star {
+		position: absolute;
+		top: 0;
+		z-index: 2;
+	}
+
+	&__icon-lightsLeft {
+		position: absolute;
+		top: 0;
+		right: 60%;
+		z-index: 1;
+	}
+
+	&__icon-lightsRight {
+		position: absolute;
+		top: 0;
+		left: 60%;
+		transform: scale(-1,1);
+		z-index: 1;
+	}
+
+	&__icon-wtf {
+		background-color: white;
+		border: 1px solid black;
+		padding: 20px 7px 7px;
+		position: absolute;
+		bottom: 95%;
+		left: 10%;
+		box-shadow: #485d74bf 8px 8px;
+		z-index: 999;
+	
+		@media screen and (max-width: 768px) {
+			bottom: 70%
+		}
+	
+		&-container {
+			background-color: #f47920;
+			border: 1px solid black;
+			display: block;
+			width: 140px;
+			height: 130px;
+			padding: 10px;
+			
+			& img {
+				height: 100%;
+				margin: 0 auto;
+			}
+		}
+		
+	
+	}
+
+	&__icon-eye {
+		display: inline-block;
+		position: absolute;
+		bottom: 97%;
+		z-index: 100;
+		left: 30%;
+	
+		@media screen and (min-width: 1000px) {
+		}
+	
+		@media (min-width: 1440px) {
+		}
+
+		&-container {
+			position: relative;
+		}
+	}
+	
+	&__icon-iris {
+		position: absolute;
+		top: 20px;
+		left: 30px;
+		width: 40px;
+	}
+
+	&__icon-x2 {
+		position: absolute;
+		bottom: 100%;
+		right: 10%;
+	}
+
+	&__icon-hexagon {
+		width: 130px;
+	}
+
+	&__icon-blueX{
+		width: 70px;
+		position: absolute;
+		top: 5%;
+		right: 107%;
+	}
+	
+	&__icon-orangeX {
+		width: 40px;
+		position: absolute;
+		bottom: 107%;
+		right: 0;
+	}
+
+	&__icon-waves {
+		position: absolute;
+		right: 25%;
+		top: 3%;
+		z-index: 2;
+		transform: scale(-1, 1);
+	}
+
+	&__linesInRound {
+		position: absolute;
+		bottom: 110%;
+		right: 20%;
+		width: 250px;
+	
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__iconsX-white {
+		position: absolute;
+		top: 120%;
+		z-index: 3;
+	}
+
+	&__icon-firstX {
+		width: 60px;
+		z-index: 1;
+		position: absolute;
+		bottom: 90%;
+		right: 80%;
+	}
+	&__icon-hexagonX {
+		width: 115px;
+	}
+	&__icon-secondX {
+		width: 100px;
+		position: absolute;
+		bottom: 0;
+		left: 105%;
+	}
+
+	&__icon-lines {
+		width: 140px;
+		position: absolute;
+		bottom: 110%;
+		right: 40%;
+	
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__icon-lines_bottom {
+		transform: scale(-1, 1);
+		left: 30%;
+		top: 90%;
+		z-index: 0;
+	}
+	
+	&__icon-lines_bottom2 {
+		left: 27%;
+		top: 200%;
+		transform: scale(1, -1);
+	}
+	
+	&__linesInRound_bottom {
+		width: 200px;
+		left: 10%;
+		top: 90%;
+		z-index: 0;
+	}
+	
+	&__icons-microphone {
+		width: 250px;
+		position: absolute;
+		left: 20%;
+		top: 110%;
+		z-index: 3;
+	}
+
+	&__icons-microphone_rightLights {
+		width: 120px;
+		position: absolute;
+		top: 0;
+		right: -15%;
+		transform: scale(-1, 1);
+	}
+	
+	&__icons-microphone_leftLights {
+		width: 120px;
+		position: absolute;
+		top: 0;
+		left: -15%;
+	}
+	
+	&__icons-microphone_star {
+		width: 260px;
+		position: absolute;
+		left: 50%;
+	
+		transform: translateX(-50%);
+	}
+
+	&__icons-microphoneImg {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		z-index: 10;
+	}
 }
 
-.x-second {
-  width: 20%;
-  position: absolute;
-  top: 50px;
+@keyframes clockwise {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
-.x-dots {
-  width: 20%;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-}
+// STATS ICONS
 
-.icons__micro {
-  margin-left: auto;
-  width: 250px;
-  position: relative;
-}
+.stats {
+	&__icon-round {
+		position: absolute;
+		bottom: 97%;
+		left: 45%;
+		width: 110px;
+	}
 
-.microphone-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  z-index: 10;
+	&__icon-nice {
+		position: absolute;
+		top: 15%;
+		right: 95%;
+		background-color: white;
+		padding: 20px 7px 7px;
+		width: 160px;
+		height: 160px;
+		box-shadow: #485d74bf 8px 8px;
+		z-index: 4;
+		border: 1px solid black;
 
-  & img {
-     width: 100%;
-  }
-}
+		@media screen and (max-width: 768px) {
+			top: 95%;
+			left: 0;
+		}
+	}
 
-.lights-right {
-  width: 120px;
-  position: absolute;
-  top: -50%;
-  left: 60%;
-  transform: scale(-1, 1);
-}
+	&__icon-container {
+		background-color: black;
+		height: 100%;
 
-.lights-left {
-  width: 120px;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
+		& img {
+			width: 80%;
+			margin: 0 auto;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 
-.burst {
-  width: 150px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+	&__icon-star {
+		position: absolute;
+		width: 200px;
+		right: -5%;
+		top: 80%;
+	}
 
-.about-icon__round {
-  width: 150px;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  z-index: 1;
-}
+	&__icon-orangeStar {
+		position: absolute;
+		width: 200px;
+		left: 10%;
+		top: 110%;
+		z-index: 1;
 
-.icon__lines {
-  width: 150px;
-  transform: scale(-1, 1);
-  position: absolute;
-  left: 30%;
-  top: 70%;
+		@media screen and (max-width: 768px) {
+			left: 50%;
+		}	}
+
+	&__icon-lines {
+		position: absolute;
+		width: 130px;
+		left: 50%;
+		bottom: -23%;
+	}
+
+	&__icon-lines_2 {
+		width: 110px;
+		left: 10%;
+		top: 100%;
+	}
+
+	&__icon-dots {
+		position: absolute;
+		width: 110px;
+		left: 35%;
+		top: 120%;
+	}
+
+	&__icon-round2 {
+		position: absolute;
+		width: 110px;
+		left: 0;
+		top: 120%;
+	}
+
+	&__icon-linesInRound {
+		position: absolute;
+		width: 200px;
+		left: 20%;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__icon-x {
+		position: absolute;
+		width: 65px;
+		left: 40%;
+		top: 115%;
+	}
 }
 
 .cube {
-  position: absolute;
-  left: 50%;
-  z-index: 999;
+	position: absolute;
+	right: 0;
+	top: 20%;
+	height: 62px;
+	width: 62px;
+	z-index: 999;
+	display: block;
 
-  &-container {
-     transform-style: preserve-3d;
-     animation: rotate 6s linear infinite;
-  }
+	&-container {
+		transform-style: preserve-3d;
+		transform: rotateX(-30deg) rotateY(30deg);
+		animation: rotate 6s linear infinite;
+	}
 
-  &__side {
-     border-radius: 10px;
-     width: 62px;
-     height: 62px;
-     border: 1px solid;
-     transform-style: preserve-3d;
-     border: 1px solid #3e3d3d;
-     position: absolute;
-     margin: 0 0 0 -31px;
+	&__side {
+		border-radius: 10px;
+		width: 62px;
+		height: 62px;
+		border: 1px solid;
+		transform-style: preserve-3d;
+		border: 1px solid #3e3d3d;
+		position: absolute;
 
-     &:nth-child(1) {
-        transform: translateZ(31px);
-        background-image: url(../img/cube.jpg);
-        background-repeat: no-repeat;
-     }
+		&:nth-child(1) {
+			transform: translateZ(31px);
+			background-image: url(../img/cube.jpg);
+			background-repeat: no-repeat;
+		}
 
-     &:nth-child(2) {
-        transform: rotateY(-90deg) translateZ(31px);
-        background-image: url(../img/cube.jpg);
-        background-position: -60px 0px;
-     }
+		&:nth-child(2) {
+			transform: rotateY(-90deg) translateZ(31px);
+			background-image: url(../img/cube.jpg);
+			background-position: -60px 0px;
+		}
 
-     &:nth-child(3) {
-        transform: rotateX(90deg) translateZ(31px);
-        background-image: url(../img/cube.jpg);
-        background-repeat: no-repeat;
-        background-position: -122px 0px;
-     }
+		&:nth-child(3) {
+			transform: rotateX(90deg) translateZ(31px);
+			background-image: url(../img/cube.jpg);
+			background-repeat: no-repeat;
+			background-position: -122px 0px;
+		}
 
-     &:nth-child(4) {
-        transform: rotateY(180deg) translateZ(31px);
-        background-image: url(../img/cube.jpg);
-        background-repeat: no-repeat;
-        background-position: -183px 0px;
-     }
+		&:nth-child(4) {
+			transform: rotateY(180deg) translateZ(31px);
+			background-image: url(../img/cube.jpg);
+			background-repeat: no-repeat;
+			background-position: -183px 0px;
+		}
 
-     &:nth-child(5) {
-        transform: rotateY(90deg) translateZ(31px);
-        background-image: url(../img/cube.jpg);
-        background-repeat: no-repeat;
-        background-position: -241px 0;
-     }
+		&:nth-child(5) {
+			transform: rotateY(90deg) translateZ(31px);
+			background-image: url(../img/cube.jpg);
+			background-repeat: no-repeat;
+			background-position: -241px 0;
+		}
 
-     &:nth-child(6) {
-       transform: rotateX(-90deg) translateZ(31px);
-     }
-  }
+		&:nth-child(6) {
+			transform: rotateX(-90deg) translateZ(31px);
+		}
+	}
 
-  @keyframes rotate {
-     0% {
-        transform: rotateX(-30deg) rotateY(0deg);
-     }
+	@keyframes rotate {
+		0% {
+			transform: rotateX(-30deg) rotateY(0deg);
+		}
 
-     100% {
-        transform: rotateX(-30deg) rotateY(360deg);
-     }
-  }
+		100% {
+			transform: rotateX(-30deg) rotateY(360deg);
+		}
+	}
 }
+
+//TEAM ICONS
+.team {
+	&__lead-text {
+		border: 1px solid #000;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		bottom: 95%;
+		right: 95%;
+		z-index: 23;
+		padding: 20px 7px 7px;
+		background: #fff;
+		box-shadow: #485d74bf 8px 8px;
+	
+		@media screen and (max-width:1050px) {
+			right: 70%;
+		}
+	
+		@media screen and (max-width: 768px) {
+			width: 150px;
+		}
+	
+		@media screen and (max-width: 555px) {
+			right: 50%;
+		}
+	
+		&-container {
+			background-color: #f47920;
+			padding: 20px 40px;
+	
+			@media screen and (max-width: 768px) {
+				padding: 10px 25px;
+			}
+		}
+	
+		&-inner:nth-child(odd) {
+			text-align: left;
+		}
+	
+		&-inner:nth-child(even) {
+			text-align: right;
+		}
+	}
+
+	&__icon-skate {
+		width: 240px;
+		position: absolute;
+		top: 140%;
+		right: 5%;
+		z-index: 3;
+	}
+
+	&__icon-yellowStar {
+		position: absolute;
+		width: 200px;
+		left: 90%;
+		bottom: 85%;
+	}
+
+	&__icon-lines {
+		position: absolute;
+		width: 150px;
+		transform: scale(1, -1);
+		bottom: 120%;
+		left: 10%;
+
+		@media screen and (max-width: 1000px) {
+			display: none;
+		}
+	}
+
+	&__icon-lines_2 {
+		left: 27%;
+		bottom: 100%;
+
+		@media screen and (max-width: 1000px) {
+			display: none;
+		}
+	}
+
+	&__icon-linesInRound {
+		position: absolute;
+		width: 250px;
+		left: 10%;
+		bottom: 90%;
+		opacity: 0.3;
+		transform: scale(1, -1);
+	}
+
+	&__icon-linesInRound_2 {
+		left: 45%;
+		bottom: 80%;
+	}
+
+	&__icon-x {
+		position: absolute;
+		width: 50px;
+		bottom: 90%;
+		left: 12%;
+	}
+
+	&__icon-round {
+		position: absolute;
+		width: 150px;
+		left: 32%;
+		bottom: 50%;
+		z-index: 0;
+		z-index: 2;
+	}
+
+	&__icon-girl {
+		position: absolute;
+		width: 300px;
+		z-index: 3;
+		left: 15%;
+		bottom: 110%;
+
+		@media screen and (max-width: 1000px) {
+			bottom: 150%;
+			left: 25%;
+		}
+
+		@media screen and (max-width: 768px) {
+			bottom: 220%;
+			left: 0;
+			transform: scale(0.8);
+		}
+	}
+
+	&__girl {
+		position: absolute;
+		z-index: 3;
+	}
+
+	&__lights-left {
+		position: absolute;
+		right: 40%;
+	}
+
+	&__lights-right {
+		position: absolute;
+		left: 60%;
+		transform: scale(-1, 1);
+	}
+
+	&__star {
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		z-index: 2;
+	}
+
+	&__icon-dots {
+		position: absolute;
+		width: 100px;
+		top: 0;
+		right: 15%;
+		z-index: 11;
+	}
+
+	&__icon-quiz {
+		position: absolute;
+		left: -10%;
+		bottom: 0%;
+		z-index: 1;
+		width: 100px;
+	}
+	
+	&__icon-quiz1 {
+		width: 100px;
+		position: absolute;
+		z-index: 2;
+		right: 0%;
+	}
+	
+	&__icon-quiz2 {
+		width: 100px;
+		position: absolute;
+		left: 0px;
+		opacity: 0.3;
+		transform: rotate(-15deg);
+		z-index: 1;
+	}
+}
+
+
+
+// EVENTS ICONS
+
+.events {
+	&__icon-yes {
+		width: 140px;
+		border: 1px solid #000;
+		display: inline-block;
+		padding: 20px 7px 7px;
+		background: #fff;
+		box-shadow: #485d74bf 8px 8px;
+		position: absolute;
+		top: 10%;
+		right: 14%;
+	}
+	&__icon-container {
+		background-color: black;
+		padding: 15px;
+	}
+}
+
+// EVER ICONS
+
+.ever {
+	&__icon-linesInRound {
+		position: absolute;
+		width: 245px;
+		bottom: 130%;
+		left: 29%;
+	}
+	&__icon-dottedHexagon {
+		position: absolute;
+		width: 120px;
+		left: 20%;
+		bottom: 130%;
+	}
+
+	&__icon-diagonalLine {
+		position: absolute;
+		width: 160px;
+		left: 25%;
+		bottom: 80%;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	&__icon-diagonalLine_2 {
+		position: absolute;
+		bottom: 105%;
+		left: 45%;
+	}
+	&__icon-dottedCube {
+		position: absolute;
+		width: 100px;
+		right: 10%;
+		bottom: 85%;
+	}
+	&__icon-round {
+		position: absolute;
+		width: 100px;
+		bottom: 85%;
+		left: 15%;
+	}
+
+	&__icon-x {
+		position: absolute;
+		width: 70px;
+		bottom: 160%;
+		right: 50%;
+	}
+
+	&__icon-guitarMan {
+		position: absolute;
+		width: 300px;
+		bottom: 145%;
+		left: 15%;
+
+		@media screen and (max-width: 881px) {
+			left: 0%;
+			transform: scale(0.8);
+		}
+	}
+	&__icon-lightsLeft {
+		width: 185px;
+		position: absolute;
+	}
+	&__icon-lightsRight {
+		width: 185px;
+		position: absolute;
+		transform: scale(-1, 1);
+		left: 100%;
+	}
+	&__icon-star {
+		position: absolute;
+		left: 35%;
+		transform: translateX(-50);
+	}
+	&__icon-man {
+		position: absolute;
+		left: 100%;
+
+		transform: translateX(-50%) translateY(-120px);
+	}
+}
+
+// FOOTER ICONS
+
+.footer {
+
+	& .container {
+		position: relative;
+	}
+
+	&__icon-dottedCub {
+		position: absolute;
+		left: 15%;
+		bottom: 70%;
+	}
+	&__icon-dottedCub {
+		position: absolute;
+	}
+
+	&__icon-dottedCub_horizontal {
+		transform: rotate(90deg);
+		left: 95%;
+
+	}
+
+	&__icon-dottedCub_horizontal-2 {
+		left: 70%;
+		bottom: -20%;
+		transform: rotate(90deg);
+		width: 80px;
+	}
+
+	&__icon-linesInRound {
+			position: absolute;
+			width: 200px;
+			right: 15%;
+			bottom: 80%;
+	}
+}
+
