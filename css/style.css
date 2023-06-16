@@ -23,6 +23,12 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+a {
+  transition: all .3s linear; }
+
+a:hover {
+  color: #d6e033 !important; }
+
 @font-face {
   font-family: 'dinbt';
   src: url("../font/dinbd.woff") format("woff2");
@@ -147,11 +153,13 @@ body {
     color: white; }
 
 .events__text {
+  font-family: 'troublefont';
   text-align: right;
   color: #fff;
-  margin: 10px;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center; }
 
 .events__title {
   font-family: "troublefont";
@@ -272,7 +280,18 @@ img, svg {
   .slider__inner {
     overflow: visible; }
   .slider__item {
-    position: relative !important; }
+    position: relative !important;
+    animation: filter 1s linear; }
+
+@keyframes filter {
+  0% {
+    filter: grayscale(0%); }
+  20% {
+    filter: grayscale(100%); }
+  50% {
+    filter: grayscale(80%); }
+  100% {
+    filter: grayscale(0%); } }
   .slider__caption-container {
     position: absolute !important;
     z-index: 100;
@@ -332,6 +351,9 @@ img, svg {
   @media screen and (max-width: 1200px) {
     .team {
       padding-bottom: 200px; } }
+  @media screen and (max-width: 1000px) {
+    .team {
+      padding-top: 300px; } }
   .team .container {
     position: relative; }
   .team__img {
@@ -442,6 +464,8 @@ img, svg {
     @media screen and (max-width: 600px) {
       .events__slider {
         left: 0; } }
+  .events__text {
+    background: black; }
   .events__link {
     position: absolute;
     right: 10%;
@@ -455,7 +479,6 @@ img, svg {
     max-width: 500px !important; }
   .events .owl-nav {
     position: absolute;
-    right: -10px;
     top: 50%;
     transform: translateY(-50%); }
 
@@ -604,6 +627,9 @@ img, svg {
   left: 10%;
   box-shadow: #485d74bf 8px 8px;
   z-index: 999; }
+  @media screen and (max-width: 992px) {
+    .about__icon-wtf {
+      bottom: 75%; } }
   @media screen and (max-width: 768px) {
     .about__icon-wtf {
       bottom: 70%; } }
@@ -624,6 +650,10 @@ img, svg {
   bottom: 97%;
   z-index: 100;
   left: 30%; }
+  @media screen and (max-width: 1000px) {
+    .about__icon-eye {
+      left: 10%;
+      bottom: 100%; } }
   .about__icon-eye-container {
     position: relative; }
 
@@ -695,7 +725,7 @@ img, svg {
   position: absolute;
   bottom: 110%;
   right: 40%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .about__icon-lines {
       display: none; } }
 
@@ -862,25 +892,25 @@ img, svg {
     position: absolute; }
     .cube__side:nth-child(1) {
       transform: translateZ(31px);
-      background-image: url(../img/cube.jpg);
+      background-image: url(../img/cube.webp);
       background-repeat: no-repeat; }
     .cube__side:nth-child(2) {
       transform: rotateY(-90deg) translateZ(31px);
-      background-image: url(../img/cube.jpg);
+      background-image: url(../img/cube.webp);
       background-position: -60px 0px; }
     .cube__side:nth-child(3) {
       transform: rotateX(90deg) translateZ(31px);
-      background-image: url(../img/cube.jpg);
+      background-image: url(../img/cube.webp);
       background-repeat: no-repeat;
       background-position: -122px 0px; }
     .cube__side:nth-child(4) {
       transform: rotateY(180deg) translateZ(31px);
-      background-image: url(../img/cube.jpg);
+      background-image: url(../img/cube.webp);
       background-repeat: no-repeat;
       background-position: -183px 0px; }
     .cube__side:nth-child(5) {
       transform: rotateY(90deg) translateZ(31px);
-      background-image: url(../img/cube.jpg);
+      background-image: url(../img/cube.webp);
       background-repeat: no-repeat;
       background-position: -241px 0; }
     .cube__side:nth-child(6) {

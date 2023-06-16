@@ -150,11 +150,13 @@
 
 .events {
 	&__text {
+		font-family: 'troublefont';
 		text-align: right;
 		color: #fff;
-		margin: 10px;
 		font-weight: bold;
 		font-size: 20px;
+		letter-spacing: 2px;
+		text-align: center;
 	}
 
 	&__title {

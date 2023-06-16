@@ -1,7 +1,7 @@
-# 🎵 TriveVibe
+# 🎵 TribeVibe
 The TribeVibe website showcases talented musicians and organizes their live performances.
 
-The **Music Performance Agency Website** can be accessed via [this link](https://vilsonkh.github.io/tribe/).
+The **TribeVibe website** can be accessed via [this link](https://vilsonkh.github.io/tribe/).
 
 ## Project Functionality
 The website provides information about the agency's services, musicians, and upcoming events. It uses animations and sliders to create an engaging experience.
@@ -25,5 +25,5 @@ The Theater project was built using the following technology stack:
 To explore the website locally, you can clone the project using this command:
 
 ```
-git clone https://github.com/vilsonkh/theatre
+git clone https://github.com/vilsonkh/tribe.git
 ```

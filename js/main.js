@@ -83,16 +83,15 @@ $(function () {
 
 document.querySelector("body").addEventListener("mousemove", eyeball);
 
-function eyeball(e) {
-	const eye = document.querySelector(".about__icon-iris");
-
-	let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
-	let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
-
-	let radian = Math.atan2(e.pageX - x, e.pageY - y);
-	let rotate = radian * (180 / Math.PI) * 1 + 270;
-	eye.style.transform = "rotate(" + rotate + "deg)";
-	eye.style.transformOrigin = "10px";
+function eyeball (event) {
+	const target = document.querySelector('.about__icon-iris');
+document.body.addEventListener('mousemove', event => {
+  const targetX = target.x;
+  const targetY = target.y;
+  const cursorX = event.x;
+  const cursorY = event.y;
+	const angle = Math.atan2(targetY-cursorY,targetX-cursorX) * 180 / Math.PI + 180
+		target.style.transform = "rotate(" + angle + "deg)";
+ 	target.style.transformOrigin = "10px";
+});
 }
-
-let scrollPos = window.pageXOffset;

@@ -19,6 +19,14 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
+a {
+  transition: all .3s linear;
+}
+
+a:hover {
+  color: #d6e033 !important;
+}
+
 @font-face {
   font-family: 'dinbt';
   src: url('../font/dinbd.woff') format('woff2');

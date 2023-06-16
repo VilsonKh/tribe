@@ -66,6 +66,10 @@
     }
   }
 
+	&__text {
+		background: black;	
+	}
+
 	&__link {
     position: absolute;
     right: 10%;
@@ -85,7 +89,7 @@
 
 	& .owl-nav {
 		position: absolute;
-		right: -10px;
+
 		top: 50%;
 		transform: translateY(-50%);
 	}
