@@ -84,25 +84,34 @@
 	&__link {
     position: absolute;
     right: 10%;
-    top: 50%;
-
+    top: 40%;
 		color: #000;
 		display: block;
+		z-index: 100;
     
+		&:hover {
+			opacity: .5 !important;
+		}
+
+		@media screen and (max-width: 1080px) {
+			top: 95%;
+		}
 	}
 	
 	& .owl-item {
 		padding: 30px 10px 10px 10px;
 		background-color: white;
 		box-shadow: #485d74bf 8px 8px;
-		max-width: 500px !important;
+		max-width: 550px !important;
 	}
 
 	& .owl-nav {
-		// position: absolute;
 		z-index: -1;
 		top: 50%;
 		transform: translateY(-50%);
+		@media screen and (max-width: 600px) {
+			display: none;
+		}
 	}
 
 }

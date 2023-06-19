@@ -3,11 +3,11 @@
 	background-image: linear-gradient(rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.13) 69px, rgba(0, 0, 0, 0.05) 70px),
 		linear-gradient(90deg, rgba(000, 000, 000, 0) 69px, rgba(0, 0, 0, 0.11) 69px, rgba(0, 0, 0, 0.05) 70px);
 	background-size: 70px 70px, 70px 70px;
-	padding-bottom: 500px;
+	padding-bottom: 300px;
 	position: relative;
 
 	@media screen and (max-width: 1200px) {
-		padding-bottom: 350px;
+		padding-bottom: 250px;
 	}
 
 	& .container {

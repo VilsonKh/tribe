@@ -3,7 +3,7 @@ $(function () {
 		rtl: true,
 		center: false,
 		items: 3,
-		loop: false,
+		loop: true,
 		margin: 40,
 		autoplay: false,
 		autoplayTimeout: 5000,
@@ -18,7 +18,7 @@ $(function () {
 				items: 1,
 			},
 			600: {
-				items: 1,
+				items: 2,
 			},
 			1000: {
 				items: 3,
@@ -73,25 +73,25 @@ $(function () {
 		items: 1,
 		slideSpeed: 2000,
 		autoplay: false,
-		dots: true,
+		dots: false,
 		loop: false,
 		responsiveRefreshRate: 200,
-		margin: 50,
+		// margin: 50,
 		loop: true,
 	});
 });
 
 document.querySelector("body").addEventListener("mousemove", eyeball);
 
-function eyeball (event) {
-	const target = document.querySelector('.about__icon-iris');
-document.body.addEventListener('mousemove', event => {
-  const targetX = target.x;
-  const targetY = target.y;
-  const cursorX = event.x;
-  const cursorY = event.y;
-	const angle = Math.atan2(targetY-cursorY,targetX-cursorX) * 180 / Math.PI + 180
+function eyeball(event) {
+	const target = document.querySelector(".about__icon-iris");
+	document.body.addEventListener("mousemove", (event) => {
+		const targetX = target.x;
+		const targetY = target.y;
+		const cursorX = event.x;
+		const cursorY = event.y;
+		const angle = (Math.atan2(targetY - cursorY, targetX - cursorX) * 180) / Math.PI + 180;
 		target.style.transform = "rotate(" + angle + "deg)";
- 	target.style.transformOrigin = "10px";
-});
+		target.style.transformOrigin = "10px";
+	});
 }

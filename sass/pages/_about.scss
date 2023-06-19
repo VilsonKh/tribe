@@ -44,6 +44,14 @@
 		}
 	}
 
+	&__link {
+		transition: all .3s linear;
+	}
+
+	&__link:hover {
+		opacity: .5;
+	}
+
 	&__img {
 		width: 100%;
 	}

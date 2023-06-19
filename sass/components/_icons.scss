@@ -387,11 +387,11 @@
 		position: absolute;
 		width: 200px;
 		left: 10%;
-		top: 110%;
-		z-index: 1;
+		bottom: 10%;
+		z-index: 0;
 
 		@media screen and (max-width: 768px) {
-			left: 50%;
+			left: 35%;
 		}	}
 
 	&__icon-lines {
@@ -411,14 +411,14 @@
 		position: absolute;
 		width: 110px;
 		left: 35%;
-		top: 120%;
+		bottom: 20%;
 	}
 
 	&__icon-round2 {
 		position: absolute;
 		width: 110px;
 		left: 0;
-		top: 120%;
+		bottom: 20%;
 	}
 
 	&__icon-linesInRound {
@@ -635,9 +635,13 @@
 		}
 
 		@media screen and (max-width: 768px) {
-			bottom: 220%;
-			left: 0;
+			bottom: 150%;
+			left: 20%;
 			transform: scale(0.8);
+		}
+
+		@media screen and (max-width: 400px) {
+			bottom:170%
 		}
 	}
 
@@ -727,6 +731,10 @@
 		width: 245px;
 		bottom: 130%;
 		left: 29%;
+
+		@media screen and (max-width: 546px) {
+			display: none;
+		}
 	}
 	&__icon-dottedHexagon {
 		position: absolute;

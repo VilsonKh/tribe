@@ -22,6 +22,9 @@
 
 	&__login {
 		color: $color-yellow !important;
+		@media screen and (max-width: 1000px) {
+			font-size: 12px;
+		}
 	}
 }
 

@@ -12,13 +12,15 @@
 		visibility: visible;
 	}
 
+	&__list {
+		gap: 20px;
+	}
+
   &__accordion {
     position: relative;
-
   }
 
 	&__accordion::before {
-
 		content: "";
     width: 5px;
     height: 5px;
@@ -26,9 +28,22 @@
 		border: 7px solid transparent;
 		border-top: 7px solid #d6e033;
     position: absolute;
-    left: 100%;
-    top: 50%;
+    left: 110%;
+    top: 10px;
     transform: translateY(-50%);
+	}
 
+	&__item {
+		width: 120px;
+		text-align: center;
+		transition: all .3s linear;
+
+		&:hover a{
+			color: #d6e033 !important;
+		}
+	}
+
+	&__item a {
+		color: white;
 	}
 }
