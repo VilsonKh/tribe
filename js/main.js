@@ -76,7 +76,6 @@ $(function () {
 		dots: false,
 		loop: false,
 		responsiveRefreshRate: 200,
-		// margin: 50,
 		loop: true,
 	});
 });
