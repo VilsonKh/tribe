@@ -434,7 +434,6 @@ img, svg {
     position: relative;
     max-width: 1296px;
     margin: 0 auto;
-    overflow-x: hidden;
     padding: 10px; }
   .events__text-box1 {
     text-align: center;
@@ -972,11 +971,11 @@ img, svg {
   border: 1px solid #000;
   position: absolute;
   width: 200px;
-  height: 200px;
+  height: 220px;
   bottom: 95%;
   right: 95%;
   z-index: 23;
-  padding: 20px 7px 7px;
+  padding: 20px 10px 10px;
   background: #fff;
   box-shadow: #485d74bf 8px 8px; }
   @media screen and (max-width: 1050px) {
@@ -1361,6 +1360,9 @@ img, svg {
     .header__login {
       margin-right: 50px;
       margin-left: auto !important; } }
+  .header__item {
+    display: flex;
+    align-items: center; }
 
 .burger-icon {
   width: 30px;
