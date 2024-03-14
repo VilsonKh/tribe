@@ -10,7 +10,7 @@ The sliders display musician profiles and past performances.
 
 The website is responsive, ensuring a seamless experience across devices.
 
-
+<img width="1920" alt="TribeVibe" src="https://github.com/VilsonKh/VilsonKh/blob/main/tribe-min.webp">
 
 ## Technology Stack
 The Theater project was built using the following technology stack:
